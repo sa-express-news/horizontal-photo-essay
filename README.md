@@ -14,13 +14,22 @@ You'll next want to run `npm run start`.
 
 Currently there is a bug with a Grommet dependency and Sass-Loader that, until new versions are released, will likely throw an error on first load. Here's how to fix it:
 
-In both of these files – `node_modules/grommet/scss/grommet-core/index.scss` and `node_modules/grommet/scss/grommet-core/_settings.scss` – change all of the imports that begin with `inuit` to `~inuit`. Eg. `@import "inuit-normalize/generic.normalize";` becomes `@import "~inuit-normalize/generic.normalize";`. Then you should be up and running.
+Open both of these files:
 
-I'll fill out the ReadMe more soon but, it's worth noting that the React/Redux structure is based loosely on [this 3-part tutorial](https://css-tricks.com/learning-react-router/) (but we're not using React-Router at the moment due to a WCM conflict I need to debug)
+ - `node_modules/grommet/scss/grommet-core/index.scss`
+ - `node_modules/grommet/scss/grommet-core/_settings.scss`
+
+And change all of the `@import`s that begin with `inuit` to `~inuit`. 
+
+Eg. `@import "inuit-normalize/generic.normalize";` becomes `@import "~inuit-normalize/generic.normalize";`. 
+
+Then you should be up and running.
+
+I'll fill out the ReadMe more soon but it's worth noting that the React/Redux structure is based loosely on [this 3-part tutorial](https://css-tricks.com/learning-react-router/) (but we're not using React-Router at the moment due to a WCM conflict we'll need to debug).
 
 ## Deploying
 
-In `package.json` enter the path to your S3 bucket.
+In `package.json` enter the path to your S3 bucket as the `s3Bucket` property.
 
 Run `npm run build`.
 

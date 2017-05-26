@@ -8,6 +8,8 @@ Run this command in your project's folder:
 curl -fsSL https://github.com/sa-express-news/expressnews-react-template/archive/master.tar.gz | tar -xz --strip-components=1
 ```
 
+Or `git clone` the repository into an empty directory.
+
 Next, `npm install`.
 
 You'll next want to run `npm run start`.

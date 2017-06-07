@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <VideoPlayer src='http://media.w3.org/2010/05/bunny/movie.mp4' autoPlay={true} muted={true} loop={true} width={'100%'}/>
+      	<VideoPlayer src='http://media.w3.org/2010/05/bunny/movie.mp4' autoPlay={true} muted={true} loop={true} />
       </div>
     );
   }

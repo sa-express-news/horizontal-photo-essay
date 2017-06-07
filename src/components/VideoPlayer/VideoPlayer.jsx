@@ -8,16 +8,25 @@ class VideoPlayer extends Component {
 		autoPlay: boolean,
 		muted: boolean,
 		loop: boolean,
-		width: string
+		height?: number,
+		width?: number
 	};
 
 	static defaultProps =  { 
-		width: '100%'
+		height: 100,
+		width: 100
 	}
 
 	render(){
+		const containerStyle = {
+			height: `${this.props.height}%`,
+			width: `${this.props.width}%`
+		};
+
 		return(
-			<video src={this.props.src} autoPlay={this.props.autoPlay} muted={this.props.muted} loop={this.props.loop} preload='auto' width={this.props.width} />		
+			<div className='videoContainer' style={containerStyle}>
+			<video src={this.props.src} autoPlay={this.props.autoPlay} muted={this.props.muted} loop={this.props.loop} preload='auto' width='100%'/>		
+			</div>
 		)
 	}
 }

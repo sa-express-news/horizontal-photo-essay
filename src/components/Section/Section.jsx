@@ -10,7 +10,7 @@ import PhotoCutline from '../PhotoCutline/PhotoCutline';
 
 class Section extends Component {
 	props: {
-		data: Array<Object>
+		data: any
 	};
 
 	loadPhoto = (path: string) =>{
@@ -19,17 +19,17 @@ class Section extends Component {
 
 	render(){
 		const data = this.props.data;
-		const components = data.map((object) =>{
+		const components = data.map((object, index) =>{
 			switch (object.type){
 				case 'text':
-					return <Paragraph text={object.value} />
+					return <Paragraph text={object.value} key={index} />
 				case 'photo':
 					const photoPath = this.loadPhoto(object.value);
-					return <FullWidthPhoto src={photoPath} alt=''/>
+					return <FullWidthPhoto src={photoPath} alt='' key={index}/>
 				case 'caption':
-					return <PhotoCaption text={object.value} />
+					return <PhotoCaption text={object.value} key={index} />
 				case 'cutline':
-					return <PhotoCutline text={object.value} />
+					return <PhotoCutline text={object.value} key={index} />
 				default:
 					return null
 			}

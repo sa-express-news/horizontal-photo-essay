@@ -6,3 +6,4 @@
 
 [options]
 module.name_mapper.extension='scss' -> 'empty/object'
+module.name_mapper.extension='jpeg' -> 'empty/object'

@@ -2,17 +2,30 @@
 
 import React, { Component } from 'react';
 
-// import Article from 'grommet/components/Article';
-// import Section from 'grommet/components/Section';
-// import Headline from 'grommet/components/Headline';
-
-import VideoPlayer from '../VideoPlayer/VideoPlayer';
+import Video from '../Video/Video';
+import Photo from '../Photo/Photo';
+import Paragraph from '../Paragraph/Paragraph';
+import Section from '../Section/Section';
 
 class App extends Component {
-  render() {
+	// componentDidMount(){
+	// 	const headers = new Headers();
+	// 	headers.set('Authorization', 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcm9kLXVzZXItY2xpZW50OmtpYWZhcmhhbmciLCJpc3MiOiJhZ2VudDpraWFmYXJoYW5nOjo3NThjNWViZi0wNzEyLTRkODMtYmU4MS1mYTY0OWIwZDhkMTAiLCJpYXQiOjE0OTY3ODA5ODEsInJvbGUiOlsidXNlcl9hcGlfd3JpdGUiLCJ1c2VyX2FwaV9yZWFkIl0sImdlbmVyYWwtcHVycG9zZSI6dHJ1ZX0.bntH-U3_VvAVgClrBSwFVRoACPsjFCwXYkxUKOd_RriSUwHgBZYc9CmJmhedZ8WUOEcXLHytvn1j16aBAt-ASg');
+
+	// 	const fetchSettings = {
+	// 		headers: headers
+	// 	};
+
+	// 	fetch('https://query.data.world/s/5udkxkm3jwslb6m620y6lkl3d', fetchSettings)
+	// 		.then(response => response.text()) 
+	// 		.then((data) =>{
+	// 			console.log(data);
+	// 		});
+	// }
+
+	render() {
     return (
       <div className="App">
-      	<VideoPlayer src='http://media.w3.org/2010/05/bunny/movie.mp4' autoPlay={true} muted={true} loop={true} />
       </div>
     );
   }

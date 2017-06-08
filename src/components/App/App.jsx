@@ -24,8 +24,29 @@ class App extends Component {
 	// }
 
 	render() {
+
+		const data = [
+      {
+        "type": "text",
+        "value": "this is a test"
+      },
+      {
+        "type": "text",
+        "value": "this is a test"
+      },
+      {
+        "type": "text",
+        "value": "this is a test"
+      },
+      {
+        "type": "photo",
+        "value": "stock.jpeg"
+      }];
+
+
     return (
       <div className="App">
+      	<Section data={data}/>
       </div>
     );
   }

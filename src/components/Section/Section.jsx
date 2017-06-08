@@ -13,6 +13,10 @@ class Section extends Component {
 		data: Array<Object>
 	};
 
+	loadPhoto = (path: string) =>{
+		return require(`../../images/${path}`);
+	}
+
 	render(){
 		const data = this.props.data;
 		const components = data.map((object) =>{
@@ -20,7 +24,8 @@ class Section extends Component {
 				case 'text':
 					return <Paragraph text={object.value} />
 				case 'photo':
-					return <FullWidthPhoto src={object.value} alt=''/>
+					const photoPath = this.loadPhoto(object.value);
+					return <FullWidthPhoto src={photoPath} alt=''/>
 				case 'caption':
 					return <PhotoCaption text={object.value} />
 				case 'cutline':

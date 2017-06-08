@@ -10,7 +10,7 @@ class SkinnyContainer extends Component {
 
 	render(){
 		const style = {
-			margn: '0 auto',
+			margin: '0 auto',
 			width: `${this.props.width}%`
 		};
 

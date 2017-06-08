@@ -11,13 +11,10 @@ class Sections extends Component {
 
 	render(){
 		const sections = this.props.sections;
-		console.log(typeof sections);
 		//Get rid of the leading array item, which is just a number key
 		const arrayOfSections = Object.entries(sections).map((data)=>{
 			return data[1];
 		});
-
-		console.log(typeof arrayOfSections);
 
 		const components = arrayOfSections.map((section, index) =>{
 			return <Section data={section} key={index}/>

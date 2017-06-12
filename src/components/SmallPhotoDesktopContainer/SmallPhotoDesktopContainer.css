@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .SmallPhotoDesktopContainer {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .SmallPhotoDesktopContainer {
+        align-items: flex-end;
+        display: flex;
+        margin: 4vh 0 4vh 22vh;
+        width: 50%;
+    }
+    .SmallPhotoDesktopContainer .PhotoInfo {
+        padding-left: 2vh;
+    }
+    .SmallPhotoDesktopContainer .PhotoInfo p {
+        margin-bottom: 0;
+    }
+}

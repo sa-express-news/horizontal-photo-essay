@@ -1,0 +1,12 @@
+.PhotoInfo{
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    .PhotoInfo{
+        width: 100%;
+    }
+}

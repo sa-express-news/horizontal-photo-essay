@@ -1,0 +1,29 @@
+.PullQuote {
+    margin: 3vh auto 3vh;
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .PullQuote {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .PullQuoteContainer {
+        float: left;
+        width: 45%;
+    }
+    .PullQuote {
+        font-size: 4.5vh;
+        font-weight: bold;
+        padding-left: 22vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .PullQuoteContainer {
+        width: 35%;
+    }
+}

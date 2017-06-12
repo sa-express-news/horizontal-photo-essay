@@ -1,0 +1,10 @@
+.StoryMetaDesktop{
+	color: white;
+	padding-left: 8vh;
+	padding-top: 55vh;
+	width: 55%;
+}
+
+.StoryMetaDesktop .headline, .StoryMetaDesktop .subhead{
+	color: white;
+}

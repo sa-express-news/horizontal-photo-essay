@@ -2,6 +2,8 @@
 
 import React, {Component} from 'react';
 
+import './PhotoCutline.css';
+
 class PhotoCutline extends Component {
 	props:{
 		text: string
@@ -9,7 +11,7 @@ class PhotoCutline extends Component {
 
 	render(){
 		return(
-			<p className='photoCutline'>{this.props.text}</p> 
+			<p className='PhotoCutline'>{this.props.text}</p> 
 		)
 	}
 }

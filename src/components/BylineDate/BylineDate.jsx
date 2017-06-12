@@ -7,7 +7,7 @@ class BylineDate extends Component {
 
 	render(){
 		return(
-			<p className='date'> By {this.props.text.toUpperCase()}</p>
+			<p className='date'>{this.props.text.toUpperCase()}</p>
 		)
 	}
 }

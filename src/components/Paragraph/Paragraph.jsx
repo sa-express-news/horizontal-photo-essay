@@ -18,9 +18,9 @@ class Paragraph extends Component {
 		let graph = null;
 
 		if(this.props.isIntro){
-			graph = <p><span className='dropCap'>{this.props.text.substring(0,1)}</span>{this.props.text.slice(1)}</p>;
+			graph = <p className='Paragraph'><span className='dropCap'>{this.props.text.substring(0,1)}</span>{this.props.text.slice(1)}</p>;
 		} else{
-			graph = <p>{this.props.text}</p>
+			graph = <p className='Paragraph'>{this.props.text}</p>
 		}
 
 		return(

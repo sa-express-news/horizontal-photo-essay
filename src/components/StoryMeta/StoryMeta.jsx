@@ -5,6 +5,8 @@ import Subhead from '../Subhead/Subhead';
 import Byline from '../Byline/Byline';
 import BylineDate from '../BylineDate/BylineDate';
 
+import './StoryMeta.css';
+
 class StoryMeta extends Component{
 	props: {
 		meta: Object

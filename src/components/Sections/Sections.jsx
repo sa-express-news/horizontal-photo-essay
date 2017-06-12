@@ -21,7 +21,7 @@ class Sections extends Component {
 		});
 
 		return(
-			<div className='sections'>
+			<div className='Sections'>
 				{components}
 			</div>
 		)

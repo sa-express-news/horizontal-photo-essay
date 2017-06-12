@@ -2,6 +2,8 @@
 
 import React, {Component} from 'react';
 
+import './PhotoCaption.css';
+
 class PhotoCaption extends Component {
 	props:{
 		text: string
@@ -9,7 +11,7 @@ class PhotoCaption extends Component {
 
 	render(){
 		return(
-			<p className='photoCaption'>{this.props.text}</p> 
+			<p className='PhotoCaption'>{this.props.text}</p> 
 		)
 	}
 }

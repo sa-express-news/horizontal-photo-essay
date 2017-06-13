@@ -3,6 +3,7 @@
 import React, {Component} from 'react';
 
 import Section from '../Section/Section';
+import ComponentMapper from '../ComponentMapper/ComponentMapper';
 
 class Sections extends Component {
 	props: {
@@ -17,7 +18,7 @@ class Sections extends Component {
 		});
 
 		const components = arrayOfSections.map((section, index) =>{
-			return <Section data={section} key={index}/>
+			return <Section data={section} mapper={ComponentMapper} key={index}/>
 		});
 
 		return(

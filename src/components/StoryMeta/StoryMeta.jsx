@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 
 import Headline from '../Headline/Headline';
 import Subhead from '../Subhead/Subhead';
-import Byline from '../Byline/Byline';
-import BylineDate from '../BylineDate/BylineDate';
-
+import BylineContainer from '../BylineContainer/BylineContainer';
 import './StoryMeta.css';
 
 class StoryMeta extends Component{
@@ -17,8 +15,7 @@ class StoryMeta extends Component{
 			<div className='StoryMeta'>
 				<Headline text={this.props.meta.headline}/>
 				<Subhead text={this.props.meta.subhead}/>
-				<Byline text={this.props.meta.byline}/>
-				<BylineDate text={this.props.meta.date}/>
+				<BylineContainer byline={this.props.meta.byline} date={this.props.meta.date}/>
 			</div>
 		)
 	}

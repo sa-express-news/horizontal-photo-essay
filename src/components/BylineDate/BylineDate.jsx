@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import './BylineDate.css';
+
 class BylineDate extends Component {
 	props: {
 		text: string
@@ -7,7 +9,7 @@ class BylineDate extends Component {
 
 	render(){
 		return(
-			<p className='date'>{this.props.text.toUpperCase()}</p>
+			<p className='Date'>{this.props.text.toUpperCase()}</p>
 		)
 	}
 }

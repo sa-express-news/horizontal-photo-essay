@@ -1,0 +1,37 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    .SmallPhotoDesktopContainerReverse {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .SmallPhotoDesktopContainerReverse {
+        display: inline-flex;
+        flex-direction: column;
+        float: right;
+        margin: 0 40% 0 1em;
+        width: 25%;
+    }
+    .SmallPhotoDesktopContainerReverse .PhotoInfo p {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) and (min-device-pixel-ratio: 2) {
+    .SmallPhotoDesktopContainerReverse {
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .SmallPhotoDesktopContainerReverse {
+        margin-right: 42%;
+    }
+}
+
+@media (min-width: 1360px) and (min-device-pixel-ratio: 2) {
+    .SmallPhotoDesktopContainerReverse {
+        margin-right: 34%;
+    }
+}

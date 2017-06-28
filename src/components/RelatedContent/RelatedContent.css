@@ -1,0 +1,56 @@
+.RelatedContent {
+    background: #DBDBDA;
+    margin: 0 auto 2vh;
+    padding: .5em;
+    width: 90%;
+}
+
+.RelatedContent p {
+    margin: 0;
+}
+
+.RelatedContentHeader {
+    font-weight: bold;
+}
+
+@media (min-width: 640px) {
+    .RelatedContent {
+        float: left;
+        margin-left: 5%;
+        margin-right: 2%;
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px) {
+    .RelatedContent {
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .RelatedContent {
+        margin-left: 11%;
+        width: 27%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .RelatedContent {
+        /*      margin-left: 14%;
+*/
+        width: 25%;
+    }
+}
+
+@media (min-width: 1366px) {
+    .RelatedContent {
+        /*      margin-left: 16%;*/
+    }
+}
+
+@media (min-width: 1440px) {
+    .RelatedContent {
+        margin-left: 9%;
+    }
+}

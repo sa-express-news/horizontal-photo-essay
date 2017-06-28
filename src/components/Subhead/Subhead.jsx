@@ -11,7 +11,7 @@ class Subhead extends Component {
 
 	render(){
 		return(
-			<h3 className='subhead'>{this.props.text}</h3>
+			<h3 className='Subhead'>{this.props.text}</h3>
 		)
 	}
 }

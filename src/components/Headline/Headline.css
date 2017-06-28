@@ -1,5 +1,26 @@
-.headline{
-	color: #000;
-	font-size: 5vh;
-	font-weight: bold;
+.Headline {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em 0 .25em;
+}
+
+@media (max-width: 1023px) {
+    .Headline {}
+}
+
+@media (min-width: 1024px) {
+    .Headline {
+        font-size: 2em;
+        margin: 0;
+    }
+}
+
+
+/*Bump up headline size for iPad Pro
+*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .Headline {
+        font-size: 2.5em;
+    }
 }

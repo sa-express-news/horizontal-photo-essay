@@ -13,9 +13,9 @@ class BylineContainer extends Component{
 
 	render(){
 		return(
-			<div className='StoryMeta'>
-				<Byline text={this.props.meta.byline}/>
-				<BylineDate text={this.props.meta.date}/>
+			<div className='BylineContainer'>
+				<Byline text={this.props.byline}/>
+				<BylineDate text={this.props.date}/>
 			</div>
 		)
 	}

@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import './Byline.css';
+
 class Byline extends Component {
 	props: {
 		text: string
@@ -7,7 +9,7 @@ class Byline extends Component {
 
 	render(){
 		return(
-			<p className='byline'> By {this.props.text}</p>
+			<p className='Byline'> By {this.props.text}</p>
 		)
 	}
 }

@@ -1,6 +1,10 @@
+.FullPhotoContainer{
+	margin: 2em 0;
+}
+
 @media only screen and (min-width: 768px){
 	.FullPhotoContainer{
-		margin: 0 auto;
+		margin: 0 auto 2vh;
 		width: 90%;
 	}
 }

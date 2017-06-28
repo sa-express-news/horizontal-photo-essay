@@ -1,0 +1,21 @@
+@media (max-width: 1023px) {
+    .iFrameContainer {
+        display: none;
+    }
+}
+
+.iFrameContainer {
+    margin: 0 auto 2vh;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 85%;
+    height: 0;
+}
+
+.iFrameContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

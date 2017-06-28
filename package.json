@@ -48,6 +48,8 @@
     "whatwg-fetch": "2.0.2"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
     "flow-bin": "^0.47.0",
     "grommet": "^1.4.0",
     "isomorphic-fetch": "^2.2.1",

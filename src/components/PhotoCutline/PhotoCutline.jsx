@@ -11,7 +11,7 @@ class PhotoCutline extends Component {
 
 	render(){
 		return(
-			<p className='PhotoCutline'>{this.props.text}</p> 
+			<span className='PhotoCutline'>({this.props.text})</span> 
 		)
 	}
 }

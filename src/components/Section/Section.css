@@ -1,0 +1,4 @@
+.Section:not(:first-child){
+	margin-bottom: 2.5em;
+	margin-top: 2.5em;
+}

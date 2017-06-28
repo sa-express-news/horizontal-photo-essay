@@ -11,7 +11,7 @@ class Headline extends Component {
 
 	render(){
 		return(
-			<h2 className='headline'>{this.props.text}</h2>
+			<h2 className='Headline'>{this.props.text}</h2>
 		)
 	}
 }

@@ -1,0 +1,40 @@
+.SectionHeading {
+    margin: .5em auto;
+    width: 90%;
+    color: #080808;
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 1.25em;
+}
+
+@media (min-width: 640px) {
+    .SectionHeading {}
+}
+
+@media only screen and (min-width: 768px) {
+    .SectionHeading {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .SectionHeading {
+        margin: 0 0 2vh 22vh;
+        line-height: 1.5;
+        width: 50%;
+    }
+}
+
+.dropCap {
+    font-size: 8vh;
+    margin-right: 3vh;
+    display: block;
+    font-weight: bold;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .dropCap {
+        font-size: 7vh;
+    }
+}

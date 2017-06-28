@@ -1,0 +1,10 @@
+.VideoContainer {
+    margin: 2em 0;
+}
+
+@media (min-width: 768px) {
+    .VideoContainer {
+        margin: 0 auto 2vh;
+        width: 90%;
+    }
+}

@@ -1,29 +1,48 @@
 .PullQuote {
-    margin: 3vh auto 3vh;
-    font-size: 3.5vh;
+    color: #080808;
+    font-size: 1.25em;
     font-weight: bold;
+    margin: 3vh auto 3vh;
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .PullQuote {
         width: 75%;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .PullQuoteContainer {
         float: left;
+        margin-right: 2%;
+        text-align: right;
         width: 45%;
     }
     .PullQuote {
-        font-size: 4.5vh;
+        font-size: 1.6em;
         font-weight: bold;
-        padding-left: 22vh;
+        margin-left: 22%;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .PullQuoteContainer {
+        clear: both;
         width: 35%;
+    }
+    .PullQuote {
+        margin-left: 30%;
+    }
+}
+
+@media (min-width: 1028px) {
+    .PullQuote {
+        margin-left: 35%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .PullQuote {
+        margin-left: 26%;
     }
 }

@@ -16,8 +16,7 @@ class PhotoInfo extends Component {
 	render(){
 		return(
 			<div className='PhotoInfo'>
-				<PhotoCaption text={this.props.caption}/>
-				<PhotoCutline text={this.props.cutline}/>
+				<PhotoCaption text={this.props.caption}/> <PhotoCutline text={this.props.cutline}/>
 			</div>
 		)
 	}

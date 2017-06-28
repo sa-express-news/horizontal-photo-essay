@@ -3,3 +3,9 @@
 	font-family: Georgia, serif;
 	line-height: 1.35;
 }
+
+@media (min-width: 768px){
+	.App{
+		line-height: 1.45;
+	}
+}

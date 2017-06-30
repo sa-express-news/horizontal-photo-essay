@@ -1,0 +1,82 @@
+.AnnotationContainer {
+    clear: both;
+    position: relative;
+    margin: .5em auto;
+/*    max-height: 100000em;*/
+    transition: 0.5s;
+    width: 90%;
+}
+
+.Annotation-text {
+    background: #C4C4C4;
+}
+
+.Annotation-text-active {
+    background: yellow;
+}
+
+.Annotation-text, .Annotation-text-active {
+    cursor: pointer;
+}
+
+.Annotation-hide {
+    height: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+/*    transition: 1s;*/
+    width: 0;
+/*    z-index: 1;*/
+opacity: 0;
+}
+
+
+/*    .Annotation-show {
+        background: #C4C4C4;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transition: 0.5s;
+        width: 50%;
+        z-index: 1;
+    }*/
+
+.Annotation-show {
+    /*        height: 100%;*/
+    transition: 1s;
+    opacity: 1;
+}
+
+.Annotation-show span {
+/*    background: #C4C4C4;*/
+}
+
+
+/*@media (min-width: 768px){
+    .Annotation-show{
+
+    }
+}*/
+
+@media (min-width: 640px) {
+    .AnnotationContainer {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .AnnotationContainer {
+        /*font-size: 2.6vh;*/
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .AnnotationContainer {
+        font-size: 1.25em;
+        margin: 0 0 2vh 22vh;
+        line-height: 1.5;
+        width: 50%;
+    }
+}

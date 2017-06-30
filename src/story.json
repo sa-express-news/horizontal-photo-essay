@@ -2,7 +2,7 @@
   "top": {
     "meta": {
       "headline": "Ticket to the top",
-      "subhead": "How tiny St. Anthony Catholic High School got involved in a questionable recruiting pipeline that included the University of the Incarnate Word, a talent scout and a booster to land star Nigerian basketball player Charles Bassey, one of the top big men in the country.",
+      "subhead": "How tiny St. Anthony Catholic High School got involved in a questionable recruiting pipeline that included the University of the Incarnate Word, an agent and a booster to land star Nigerian basketball player Charles Bassey, one of the top big men in the country.",
       "byline": "Adam Zuvanich",
       "date": "June 23, 2017"
     },
@@ -33,7 +33,7 @@
       },
       {
         "type": "text",
-        "value": "How Bassey ended up at St. Anthony — a historic private school in Monte Vista north of downtown — sheds light on an international recruiting effort that involves the University of the Incarnate Word, a wealthy former trustee of the university, and a talent scout who owns a nonprofit that advertises itself as a conduit for foreign athletes seeking an education in the United States."
+        "value": "How Bassey ended up at St. Anthony — a historic private school in Monte Vista north of downtown — sheds light on an international recruiting effort that involves the University of the Incarnate Word, a wealthy former trustee of the university, and an agent who runs a nonprofit that advertises itself as a conduit for foreign athletes seeking an education in the United States."
       },
       {
         "type": "text",
@@ -140,7 +140,7 @@
       },
       {
         "type": "text",
-        "value": "His talent is undeniable. In highlight videos, Bassey — who shares the “Big Ticket” nickname with retired NBA star Kevin Garnett — displays an array of moves, dunking from multiple angles, blocking shots above the rim, dribbling past defenders and hitting outside jumpers."
+        "value": "His talent is undeniable. In highlight videos, Bassey displays an array of moves, dunking from multiple angles, blocking shots above the rim, dribbling past defenders and hitting outside jumpers."
       },
       {
         "type": "text",
@@ -158,7 +158,7 @@
     "2": [
       {
         "type": "sectionheading",
-        "value": "A talent scout gets involved"
+        "value": "Agent gets involved"
       },
       {
         "type": "text",
@@ -174,7 +174,7 @@
       },
       {
         "type": "text",
-        "value": "Jurenovich, speaking on behalf of St. Anthony, said Auriantal was hired by St. Anthony as a potential coach, recruiter of international students and student-affairs liaison for the high school’s 42 international boarding students. He has since been named the interim associate basketball coach."
+        "value": "Jurenovich, speaking on behalf of St. Anthony, said Auriantal was hired by St. Anthony as a potential coach, recruiter of international students and student-affairs liaison for the high school’s 42 international boarding students."
       },
       {
         "type": "photo",
@@ -274,6 +274,37 @@
     "3": [
       {
         "type": "sectionheading",
+        "value": "Photo Essay"
+      },
+      {
+        "type": "photoessay",
+        "value": [
+          {
+            "url": "ScottDeemFuneral15.JPG",
+            "title": "Honoring a Hero",
+            "caption": "A photo essay memorializing the May 26th funeral procession for San Antonio firefighter Scott Deem."
+          },
+          {
+            "url": "ScottDeemFuneral02.JPG",
+            "title": "Loading in the casket",
+            "caption": "The casket of fallen firefighter Scott Deem is placed on a fire truck at Porter Loring Mortuary."
+          },
+          {
+            "url": "ScottDeemFuneral03.JPG",
+            "title": "A cross and dog tags",
+            "caption": "A San Antonio Fire Department chaplain holds a cross and dog tags as he leaves Porter Loring Mortuary."
+          },
+          {
+            "url": "ScottDeemFuneral04.JPG",
+            "title": "Through Alamo Plaza",
+            "caption": "The funeral procession proceeds past Alamo Plaza as firefighters and members of the public lined Alamo Street to pay their final respects."
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "type": "sectionheading",
         "value": "Joining the national ranks"
       },
       {
@@ -359,7 +390,7 @@
         "value": "Southwest Christian is excluded from the Arkansas Activities Association because it has boarding students, association executive director Joey Walters said."
       }
     ],
-    "4": [
+    "5": [
       {
         "type": "sectionheading",
         "value": "Custody dispute over Bassey"
@@ -448,7 +479,7 @@
         "value": "When asked if Bassey was a factor in seeking the sponsorship agreements, Coleman said, “I would assume so. He’s top five in the country.”"
       }
     ],
-    "5": [
+    "6": [
       {
         "type": "sectionheading",
         "value": "Tourney MVP"
@@ -469,7 +500,7 @@
         "type": "photo",
         "value": {
           "source": "team-tournament.jpg",
-          "caption": "Ousmane Ndim (5), Charles Bassey (23) and Sam Chaput (33) of St. Anthony Catholic High School join other players from the \"Yes II Success\" basketball team to play in a tournament on April 14, 2017. Ralph Auriantal, Hennssy Auriantal's brother and an assistant coach at Athlos Academy, is seated next to Ndim.",
+          "caption": "Ousmine Ddim (05), Charles Bassy (23) and Sam Chaput (33) of St. Anthony Catholic High School joins other players from the \"Yes II Success\" basketball team to play in a tournament on April 14, 2017. The team consisted of players from St. Anthony's Catholic High School.",
           "cutline": "Kin Man Hui / San Antonio Express-News",
           "type": "full"
         }

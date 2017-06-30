@@ -12,7 +12,7 @@ class ResponsiveiFrame extends Component {
 	render(){
 		return(
 			<div className='iFrameContainer'>
-				<iframe src={this.props.src} frameBorder="0" allowFullScreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"/>		
+				<iframe src={this.props.src} frameBorder="0" allowFullScreen="true" />		
 			</div>
 		)
 	}

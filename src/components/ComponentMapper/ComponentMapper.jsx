@@ -10,12 +10,17 @@ import SmallPhotoDesktop from '../SmallPhotoDesktop/SmallPhotoDesktop';
 import SmallPhotoDesktopContainer from '../SmallPhotoDesktopContainer/SmallPhotoDesktopContainer';
 import SmallPhotoDesktopContainerReverse from '../SmallPhotoDesktopContainerReverse/SmallPhotoDesktopContainerReverse';
 import Photos from '../Photos/Photos';
+import PhotoEssayContainer from '../PhotoEssayContainer/PhotoEssayContainer';
 import Annotation from '../Annotation/Annotation';
 import Annotations from '../Annotations/Annotations';
 import PullQuote from '../PullQuote/PullQuote';
 import RelatedContent from '../RelatedContent/RelatedContent';
 import ResponsiveiFrame from '../ResponsiveiFrame/ResponsiveiFrame';
 import Video from '../Video/Video';
+
+const loadPhoto = (path: string) => {
+	return require(`../../images/${path}`);
+};
 
 export default{
 	text: (object: Object, key: number) => <Paragraph text={object.value} key={key}/>,
@@ -26,7 +31,7 @@ export default{
 
 	photo: function(object: Object, key: number){
 		const photo = object.value;
-		const photoPath = this.loadPhoto(photo.source);
+		const photoPath = loadPhoto(photo.source);
 		switch (photo.type){
 			
 			case 'full': 
@@ -43,7 +48,7 @@ export default{
 
 			default:
 			return null
-		};
+		}
 	},
 	
 	photos: (object: Object, key: number) => <Photos photos={object.value} key={key}/>,
@@ -55,6 +60,8 @@ export default{
 	annotation: (object: Object, key: number) => <Annotation text={object.value.text} annotation={object.value.annotation} key={key} />,
 
 	annotations: (object: Object, key: number) => <Annotations annotations={object.value} key={key} />,
+
+	photoessay: (object: Object, key: number) => <PhotoEssayContainer photos={object.value} key={key} loadPhoto={loadPhoto} />,
 
 	pullquote: (object: Object, key: number) => <PullQuote quote={object.value.quote} key={key} />,
 

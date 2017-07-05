@@ -57,11 +57,18 @@ export default{
 		return require(`../../images/${path}`);
 	},
 
+<<<<<<< HEAD
 	annotation: (object: Object, key: number) => <Annotation text={object.value.text} annotation={object.value.annotation} key={key} />,
 
 	annotations: (object: Object, key: number) => <Annotations annotations={object.value} key={key} />,
 
 	photoessay: (object: Object, key: number) => <PhotoEssayContainer photos={object.value} key={key} loadPhoto={loadPhoto} />,
+=======
+	photoessay: (object: Object, key: number) => {
+		const essayId = `essay-${key}`;
+		return <PhotoEssayContainer photos={object.value} key={key} loadPhoto={loadPhoto} essayId={essayId} />;
+	},
+>>>>>>> Get double instances to work
 
 	pullquote: (object: Object, key: number) => <PullQuote quote={object.value.quote} key={key} />,
 

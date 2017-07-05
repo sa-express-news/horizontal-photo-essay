@@ -280,22 +280,22 @@
         "type": "photoessay",
         "value": [
           {
-            "url": "ScottDeemFuneral15.JPG",
+            "source": "ScottDeemFuneral15.JPG",
             "title": "Honoring a Hero",
             "caption": "A photo essay memorializing the May 26th funeral procession for San Antonio firefighter Scott Deem."
           },
           {
-            "url": "ScottDeemFuneral02.JPG",
+            "source": "ScottDeemFuneral02.JPG",
             "title": "Loading in the casket",
             "caption": "The casket of fallen firefighter Scott Deem is placed on a fire truck at Porter Loring Mortuary."
           },
           {
-            "url": "ScottDeemFuneral03.JPG",
+            "source": "ScottDeemFuneral03.JPG",
             "title": "A cross and dog tags",
             "caption": "A San Antonio Fire Department chaplain holds a cross and dog tags as he leaves Porter Loring Mortuary."
           },
           {
-            "url": "ScottDeemFuneral04.JPG",
+            "source": "ScottDeemFuneral04.JPG",
             "title": "Through Alamo Plaza",
             "caption": "The funeral procession proceeds past Alamo Plaza as firefighters and members of the public lined Alamo Street to pay their final respects."
           }
@@ -480,6 +480,37 @@
       }
     ],
     "6": [
+      {
+        "type": "sectionheading",
+        "value": "Photo Essay 2"
+      },
+      {
+        "type": "photoessay",
+        "value": [
+          {
+            "source": "ScottDeemFuneral15.JPG",
+            "title": "Honoring a Hero",
+            "caption": "A photo essay memorializing the May 26th funeral procession for San Antonio firefighter Scott Deem."
+          },
+          {
+            "source": "ScottDeemFuneral02.JPG",
+            "title": "Loading in the casket",
+            "caption": "The casket of fallen firefighter Scott Deem is placed on a fire truck at Porter Loring Mortuary."
+          },
+          {
+            "source": "ScottDeemFuneral03.JPG",
+            "title": "A cross and dog tags",
+            "caption": "A San Antonio Fire Department chaplain holds a cross and dog tags as he leaves Porter Loring Mortuary."
+          },
+          {
+            "source": "ScottDeemFuneral04.JPG",
+            "title": "Through Alamo Plaza",
+            "caption": "The funeral procession proceeds past Alamo Plaza as firefighters and members of the public lined Alamo Street to pay their final respects."
+          }
+        ]
+      }
+    ],
+    "7": [
       {
         "type": "sectionheading",
         "value": "Tourney MVP"

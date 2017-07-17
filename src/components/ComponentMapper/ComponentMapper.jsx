@@ -10,6 +10,8 @@ import SmallPhotoDesktop from '../SmallPhotoDesktop/SmallPhotoDesktop';
 import SmallPhotoDesktopContainer from '../SmallPhotoDesktopContainer/SmallPhotoDesktopContainer';
 import SmallPhotoDesktopContainerReverse from '../SmallPhotoDesktopContainerReverse/SmallPhotoDesktopContainerReverse';
 import Photos from '../Photos/Photos';
+import Annotation from '../Annotation/Annotation';
+import Annotations from '../Annotations/Annotations';
 import PullQuote from '../PullQuote/PullQuote';
 import RelatedContent from '../RelatedContent/RelatedContent';
 import ResponsiveiFrame from '../ResponsiveiFrame/ResponsiveiFrame';
@@ -49,6 +51,10 @@ export default{
 	loadPhoto: function(path: string){
 		return require(`../../images/${path}`);
 	},
+
+	annotation: (object: Object, key: number) => <Annotation text={object.value.text} annotation={object.value.annotation} key={key} />,
+
+	annotations: (object: Object, key: number) => <Annotations annotations={object.value} key={key} />,
 
 	pullquote: (object: Object, key: number) => <PullQuote quote={object.value.quote} key={key} />,
 

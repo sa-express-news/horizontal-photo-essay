@@ -20,7 +20,7 @@ class App extends Component {
             <IntroParagraph text='Towering above his high school defenders, 6-foot-10 center Charles Bassey took the ball on the right wing of the basket, dribbled, then flung it to the backboard in the playful style of a Harlem Globetrotter.' />
             <AbortionAnnotations/>
             <Sections sections={Story.sections}/>
-            <CostClock startDate={new Date('7/17/17')} costPerSecond={.39} title={'Cost of the Texas special session'}/>
+            <CostClock startDate={new Date('7/17/17')} costPerSecond={.39} title={'Texas special session cost'}/>
           </div>
       </div>
     );

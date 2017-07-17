@@ -5,8 +5,6 @@ import React, {Component} from 'react';
 import FullPhotoContainer from '../FullPhotoContainer/FullPhotoContainer';
 import FullPhoto from '../FullPhoto/FullPhoto';
 
-import './Photos.css';
-
 class Photos extends Component{
 	props: {
 		photos: Array<any>

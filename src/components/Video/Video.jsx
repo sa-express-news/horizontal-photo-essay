@@ -20,7 +20,7 @@ class Video extends Component {
 		width: 100,
 		controls: true
 	};
-
+	// $FlowFixMe
 	handleClick = (event) =>{
 		let paused = event.target.paused;
 		if (paused){

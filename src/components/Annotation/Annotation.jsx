@@ -11,31 +11,13 @@ class Annotation extends Component {
 	};
 
 	state = {
-		hide: true,
-		touchStartX: 0,
-		touchStartY: 0
+		hide: true
 	};
 
 	toggleHideStatus = () =>{
 		this.setState({hide: !this.state.hide});
 	}
 
-	handleTouchStart = (event: Event) =>{
-		this.setState({
-			touchStartX: event.changedTouches[0].screenX,
-			touchStartY: event.changedTouches[0].screenY
-		});
-	}
-
-	handleTouchEnd = (event: Event) =>{
-		const horizontalDistanceTraveled = event.changedTouches[0].screenX - this.state.touchStartX;
-		const verticalDistanceTraveled = event.changedTouches[0].screenY - this.state.touchStartY;
-
-		if (horizontalDistanceTraveled > 50 && Math.abs(verticalDistanceTraveled) < 50){
-			this.toggleHideStatus();
-		}
-
-	}
 	render(){
 
 		const textClass = this.state.hide ? 'Annotation-text' : 'Annotation-text-active';

@@ -1,0 +1,21 @@
+.Button {
+    background: #AFAFAF;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    padding: .5rem;
+    font-family: serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.Button:focus{
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.Button:active{
+	background: gray;
+}

@@ -1,0 +1,46 @@
+.SlideshowPhotoContainer {
+    margin: 2em 0;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .SlideshowPhotoContainer {
+        margin: 0 auto 2vh;
+        width: 95%;
+    }
+}
+
+.SlideshowPhoto {
+    touch-action: none;
+}
+
+
+/*Stop the slideshow from blocking scroll on devices/orientations where it's full-screen */
+
+/*Nexus 5x + 6*/
+@media (device-width: 732px) and (orientation: landscape){
+    .SlideshowPhoto {
+        touch-action: initial;
+    }
+}
+
+/*iPhone 5*/
+@media (device-width: 568px) and (orientation: landscape){
+    .SlideshowPhoto {
+        touch-action: initial;
+    }
+}
+
+/*iPhone 6*/
+@media (device-width: 667px) and (orientation: landscape){
+    .SlideshowPhoto {
+        touch-action: initial;
+    }
+}
+
+/*iPhone 6 Plus*/
+@media (device-width: 736px) and (orientation: landscape){
+    .SlideshowPhoto {
+        touch-action: initial;
+    }
+}

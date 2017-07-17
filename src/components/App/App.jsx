@@ -6,6 +6,7 @@ import StoryTopContainer from '../StoryTopContainer/StoryTopContainer';
 import IntroParagraph from '../IntroParagraph/IntroParagraph';
 import AbortionAnnotations from '../AbortionAnnotations/AbortionAnnotations';
 import Sections from '../Sections/Sections';
+import CostClock from '../CostClock';
 
 import Story from '../../story-short.json';
 import './App.css';
@@ -19,6 +20,7 @@ class App extends Component {
             <IntroParagraph text='Towering above his high school defenders, 6-foot-10 center Charles Bassey took the ball on the right wing of the basket, dribbled, then flung it to the backboard in the playful style of a Harlem Globetrotter.' />
             <AbortionAnnotations/>
             <Sections sections={Story.sections}/>
+            <CostClock startDate={new Date('7/17/17')} costPerSecond={.39} title={'Cost of the Texas special session'}/>
           </div>
       </div>
     );

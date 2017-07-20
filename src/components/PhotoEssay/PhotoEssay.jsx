@@ -3,7 +3,6 @@
 import React from 'react';
 import _ from 'lodash';
 import ReactVisiblitySensor from 'react-visibility-sensor';
-import 'object-fit-polyfill';
 
 // grommet components
 import Box from 'grommet/components/Box';
@@ -52,7 +51,6 @@ export default (props: propTypes) => (
 							  fit="contain"
 							  full={true}
 							  className="full-page-photo show"
-							  data-object-fit="contain"
 							/>
 						</Animate>
 					)}

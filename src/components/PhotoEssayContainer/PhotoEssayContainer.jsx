@@ -9,46 +9,50 @@ import PhotoEssay from '../PhotoEssay/PhotoEssay';
 
 import './PhotoEssayContainer.scss';
 
-let fadeTimeout = null;
-
-let imgHeight = null; // store these in just this component!!!
-let essay = null;
-let ticking = false;
-
+let essayId = 0; // will be incremented with each new instance
 
 class PhotoEssayContainer extends Component {
     props: {
         photos: Array,
         loadPhoto: Function,
-        essayId: string,
     }
 
-    state = {
-        currPhotoIdx: 0,
-        isCaptionOpen: false,
-        isTitleVisible: true,
-        isEssayVisible: false,
-        ticking: false,
-        imgHeight: null,
-        essay: null,
-        positionInViewport: 'above', // options: 'above', 'centered' or 'below'
+    state: {
+        currPhotoIdx: number,
+        isCaptionOpen: boolean,
+        isTitleVisible: boolean,
+        isEssayVisible: boolean,
+        positionInViewport: string, // options: 'above', 'centered' or 'below'
+    }
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            currPhotoIdx: 0,
+            isCaptionOpen: false,
+            isTitleVisible: true,
+            isEssayVisible: false,
+            positionInViewport: 'above',
+        };
+
+        this.essay = null; // the element child component element we'll need to keep track of in the DOM
+        this.lastScroll = 0 // used to throttle calls to getBoundingClientRect
+        this.imgHeight = 0; // the height of our images in the photo essay, will be calculated via viewport/aspect ratio
+        this.fadeCaptionTimeout = null; // setTimeout returned val
+        this.animationTicking = false; // used to throttle scroll events
+        this.photoEssayId = this.setEssayId(); // unique identifier
+    }
+
+    setEssayId() {
+        essayId += 1;
+        return `essay-${essayId}`;
     }
 
     componentDidMount() {
-        window.addEventListener('mousemove', this.onMove.bind(this));
-        window.addEventListener('touchmove', this.onMove.bind(this));
+        window.addEventListener('mousemove', this.setTitleVisibility.bind(this));
+        window.addEventListener('touchmove', this.setTitleVisibility.bind(this));
         window.addEventListener('scroll', this.throttleScroll.bind(this));
-    }
-
-    throttleScroll() {
-        // avoid event storms. more info here: https://www.html5rocks.com/en/tutorials/speed/animations/
-        if (!this.state.ticking) {
-            window.requestAnimationFrame(() => {
-                this.onMove();
-                this.setState({ ticking: false });
-            });
-        }
-        this.setState({ ticking: true });
     }
 
     componentWillUnmount() {
@@ -57,9 +61,40 @@ class PhotoEssayContainer extends Component {
         });
     }
 
-    onMove() {
-        this.setPositionInViewport();
+    throttleScroll() {
+        // avoid event storms. more info here: https://www.html5rocks.com/en/tutorials/speed/animations/
+        if (!this.animationTicking) {
+            window.requestAnimationFrame(() => {
+                if (this.shouldCheckPositionInViewport()) {
+                    this.setPositionInViewport();
+                }
+                this.setTitleVisibility();
+                this.animationTicking = false;
+            });
+        }
+        this.animationTicking = true;
+    }
 
+    shouldCheckPositionInViewport() {
+        // this function checks to see if scroll is heading away, toward or is centered on essay
+        // if we're scrolling toward the essay or are centered on it, it runs return true
+        const { positionInViewport } = this.state;
+        let should = false;
+
+        if (positionInViewport === 'centered') {
+            should = true;
+        }
+        else if (positionInViewport === 'above') {
+            should = window.scrollY > this.lastScroll;
+        }
+        else {
+            should = window.scrollY < this.lastScroll;
+        }
+        this.lastScroll = window.scrollY;
+        return should;
+    }
+
+    setTitleVisibility() {
         // when the user scrolls or moves their mouse, the image title should be shown
         // further a timeout should be set to hide the title after 1.5 seconds of no movement
         this.handleClearTimeout(); // clear any existing timeouts
@@ -70,23 +105,23 @@ class PhotoEssayContainer extends Component {
     }
 
     handleClearTimeout() {
-        window.clearTimeout(fadeTimeout);
+        window.clearTimeout(this.fadeCaptionTimeout);
     }
 
     setFadeTimeout() {
-        fadeTimeout = window.setTimeout(this.hideTitle.bind(this), 1500);
+        this.fadeCaptionTimeout = window.setTimeout(this.hideTitle.bind(this), 1500);
     }
 
     setPositionInViewport() {
         // this method keeps track of the location of the photo essay in the viewport
         // the location is used to toggle the position of the photos from 'absolute' to fixed
-        // and to set the top and bottom properties of the image too
+        // and to set the top property of the image
         let positionInViewport = 'centered';
-        if ((imgHeight && essay) || this.getEssayDomElements()) { // minimize dom element retrieval
-            const essayBbox = essay.getBoundingClientRect();
+        if ((this.imgHeight || this.setImgHeight()) && (this.essay || this.setEssay())) { // minimize dom element retrieval
+            const essayBbox = this.essay.getBoundingClientRect();
             if (essayBbox.top > 0) {
                 positionInViewport = 'above';
-            } else if (essayBbox.bottom < imgHeight) {
+            } else if (essayBbox.bottom < this.imgHeight) {
                 positionInViewport = 'below';
             }
 
@@ -96,14 +131,15 @@ class PhotoEssayContainer extends Component {
         }
     }
 
-    getEssayDomElements() {
-        const imgSelector = `#${this.props.essayId} .full-page-photo.show`;
-        const img = document.querySelector(imgSelector);
+    setEssay() {
+        this.essay = document.getElementById(this.photoEssayId);
+        return this.essay !== null;
+    }
 
-        if (img) imgHeight = img.height;
-        essay = document.getElementById(this.props.essayId);
-
-        return imgHeight !== null && essay !== null;
+    setImgHeight() {
+        const img = document.querySelector(`#${this.photoEssayId} .full-page-photo.show`);
+        if (img) this.imgHeight = img.height;
+        return this.imgHeight !== 0
     }
 
     getStylesBasedOnPositionInViewport() {
@@ -130,8 +166,8 @@ class PhotoEssayContainer extends Component {
     }
 
     getLastPhotoPosition() {
-        if ((imgHeight && essay) || this.getEssayDomElements()) {
-            return essay.clientHeight - imgHeight;
+        if ((this.imgHeight || this.setImgHeight()) && (this.essay || this.setEssay())) { // minimize dom element retrieval
+            return this.essay.clientHeight - this.imgHeight;
         }
     }
 
@@ -183,7 +219,7 @@ class PhotoEssayContainer extends Component {
     }
 
     render() {
-        const { photos, loadPhoto, essayId } = this.props;
+        const { photos, loadPhoto } = this.props;
         return (
             <Section
                 pad="none"
@@ -197,7 +233,7 @@ class PhotoEssayContainer extends Component {
                 <PhotoEssay 
                     photos={photos}
                     loadPhoto={loadPhoto}
-                    essayId={essayId}
+                    essayId={this.photoEssayId}
                     getStylesBasedOnPositionInViewport={(...args) => this.getStylesBasedOnPositionInViewport(...args)}
                     isCurrPhoto={(...args) => this.isCurrPhoto(...args)}
                     updateCurrPhoto={(...args) => this.updateCurrPhoto(...args)}

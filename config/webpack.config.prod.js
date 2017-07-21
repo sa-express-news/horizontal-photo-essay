@@ -153,7 +153,7 @@ module.exports = {
       // Sass, son
       {  
         test: /\.scss$/,
-        loader: 'style!css!sass?outputStyle=expanded&' +
+        loader: 'style!css!sass?outputStyle=compressed&' +
         'includePaths[]=' +
         (encodeURIComponent(
           path.resolve(process.cwd(), './node_modules')

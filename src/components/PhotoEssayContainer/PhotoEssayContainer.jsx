@@ -36,7 +36,7 @@ class PhotoEssayContainer extends Component {
             positionInViewport: 'above',
         };
 
-        this.essay = null; // the element child component element we'll need to keep track of in the DOM
+        this.essay = null; // the element child component we'll need to keep track of in the DOM
         this.lastScroll = 0 // used to throttle calls to getBoundingClientRect
         this.imgHeight = 0; // the height of our images in the photo essay, will be calculated via viewport/aspect ratio
         this.fadeCaptionTimeout = null; // setTimeout returned val

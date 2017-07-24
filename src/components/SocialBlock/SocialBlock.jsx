@@ -13,4 +13,4 @@ export default () => (
     <Social type='twitter' link='http://www.expressnews.com/st-anthony-basketball-ticket-to-top/' />
     <Social type='reddit' link='http://www.expressnews.com/st-anthony-basketball-ticket-to-top/' />
   </div>
-);
+); 

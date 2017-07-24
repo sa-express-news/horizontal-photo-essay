@@ -26,10 +26,10 @@
 }
 
 .Paragraph .dropCap {
+    color: #FCB001;
     float: left;
-    font-size: 8vh;
-    line-height: 60px;
-    padding-top: 1vh;
+    font-family: 'Suez One', serif;
+    font-size: 80px;
     padding-right: 0;
     padding-left: 3px;
 }

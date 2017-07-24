@@ -1,0 +1,13 @@
+.StorySeriesBlock{
+	background: linear-gradient(to right, #3c0000, #f60000);
+	border: 2px solid white;
+	color: #FDFEFE;
+	font-family: 'Suez One', serif;
+	font-size: 13.5px;
+	padding: .2em .3em;
+	width: 50%;
+}
+
+.StorySeriesBlock p{
+	margin-bottom: 0;
+}

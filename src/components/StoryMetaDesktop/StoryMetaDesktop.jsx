@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
-import Headline from '../Headline/Headline';
-import Subhead from '../Subhead/Subhead';
-import BylineContainer from '../BylineContainer/BylineContainer';
+import Headline from '../Headline';
+import Subhead from '../Subhead';
+import BylineContainer from '../BylineContainer';
 
 import './StoryMetaDesktop.css';
 

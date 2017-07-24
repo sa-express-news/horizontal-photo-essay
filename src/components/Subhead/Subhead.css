@@ -3,7 +3,10 @@
     font-size: 3vh;
     font-weight: 300;
     line-height: 1.1;*/
-    font-size: 1em;
+    font-family: 'Sanchez', serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.25;
     margin-top: 0;
 }
 

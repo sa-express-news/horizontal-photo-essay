@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import Paragraph from '../Paragraph/Paragraph';
+import Paragraph from '../Paragraph';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import FullPhoto from '../FullPhoto/FullPhoto';
 import FullPhotoContainer from '../FullPhotoContainer/FullPhotoContainer';

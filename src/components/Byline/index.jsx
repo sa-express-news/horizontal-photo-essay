@@ -9,9 +9,9 @@ class Byline extends Component {
 
 	render(){
 		return(
-			<p className='Byline'> By {this.props.text}</p>
+			<p className='Byline'>Story by {this.props.text}</p>
 		)
 	}
-}
+} 
 
 export default Byline;

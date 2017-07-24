@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 
-import StoryTop from '../StoryTop/StoryTop';
+import StoryTop from '../StoryTop';
 import StoryTopDesktop from '../StoryTopDesktop/StoryTopDesktop';
 import SocialBlock from '../SocialBlock/SocialBlock';
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import Byline from '../Byline/Byline';
-import BylineDate from '../BylineDate/BylineDate';
+import Byline from '../Byline';
+import BylineDate from '../BylineDate';
 
 import './BylineContainer.css';
 

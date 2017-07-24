@@ -8,7 +8,7 @@ class LeftYellowBorder extends Component{
 	props: {
 		children: any
 	};
-
+ 
 	render(){
 		return(
 			<div className='LeftYellowBorder'>

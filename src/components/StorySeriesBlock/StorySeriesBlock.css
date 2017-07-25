@@ -2,10 +2,16 @@
 	background: linear-gradient(to right, #3c0000, #f60000);
 	border: 2px solid white;
 	color: #FDFEFE;
+	display: inline-block;
 	font-family: 'Suez One', serif;
 	font-size: 13.5px;
 	padding: .2em .3em;
-	width: 50%;
+}
+
+@media (min-width: 768px){
+	.StorySeriesBlock{
+		font-size: 18px;
+	}
 }
 
 .StorySeriesBlock p{

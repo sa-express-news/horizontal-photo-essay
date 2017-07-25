@@ -1,22 +1,24 @@
 .Social {
+	background: #808080;
+	border-radius: 50%;
 	float: left;
+	margin: 0 .5em 1em;
 }
 
 .Social svg {
-	padding: 10px;
+	padding: 5px;
 	width: 30px;
-	height: 30px;
 }
 
 .Social svg g {
-	fill: white;
+	fill: #fff;
 	fill-opacity: 0.6;
 }
 
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
 	.Social svg {
 		width: 50px;
 		height: 50px;
 		padding: 15px;
 	}
-}
+}*/

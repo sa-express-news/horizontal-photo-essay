@@ -5,6 +5,12 @@
     font-family: 'Suez One', serif;
 }
 
+@media (min-width: 768px){
+    .Headline{
+        font-size: 44px;
+    }
+}
+
 @media (max-width: 1023px) {
     .Headline {}
 }

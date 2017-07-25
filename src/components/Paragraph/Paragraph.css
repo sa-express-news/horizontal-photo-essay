@@ -1,4 +1,6 @@
 .Paragraph {
+    clear: both;
+    line-height: 1.25;
     margin: .5em auto;
     width: 90%;
 }
@@ -9,14 +11,14 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .Paragraph {
         /*font-size: 2.6vh;*/
         width: 80%;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .Paragraph {
         font-size: 1.25em;
         margin: 0 0 2vh 22vh;
@@ -32,4 +34,11 @@
     font-size: 80px;
     padding-right: 0;
     padding-left: 3px;
+    margin-bottom: -.25em;
+}
+
+@media (min-width: 768px) {
+    .Paragraph .dropCap {
+        font-size: 140px;
+    }
 }

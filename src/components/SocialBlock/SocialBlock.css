@@ -1,6 +1,8 @@
 .SocialBlock {
-	position: absolute;
+/*	position: absolute;
 	right: 0;
 	top: 0;
-	z-index: 1000;
+	z-index: 1000;*/
+	width: 80%;
+	margin: 0 auto;
 }

@@ -1,18 +1,21 @@
-.PhotoInfo{
-	margin: 0 auto;
-	width: 90%;
-}
-
-@media (max-width: 767px){
-	.StoryTop .PhotoInfo{
-		display: none;
-	}
+.PhotoInfo {
+    font-family: 'Sanchez', serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0 auto;
+    width: 90%;
 }
 
 
+.StoryTop .PhotoInfo {
+    display: none;
+}
 
-@media only screen and (min-width: 1024px){
-    .PhotoInfo{
+
+
+
+@media only screen and (min-width: 1024px) {
+    .PhotoInfo {
         width: 100%;
     }
 }

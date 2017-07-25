@@ -1,10 +1,9 @@
 .SectionHeading {
-    margin: .5em auto;
+    margin: 1em auto;
     width: 90%;
-    color: #080808;
+    color: #f60000;
     font-weight: bold;
     line-height: 1.1;
-    font-size: 1.25em;
 }
 
 @media (min-width: 640px) {

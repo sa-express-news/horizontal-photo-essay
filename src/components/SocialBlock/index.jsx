@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import Social from '../Social/Social';
+import Social from '../Social';
 
 import './SocialBlock.css';
 

@@ -2,8 +2,8 @@
 
 import React, {Component} from 'react';
 
-import PhotoCaption from '../PhotoCaption/PhotoCaption';
-import PhotoCutline from '../PhotoCutline/PhotoCutline';
+import PhotoCaption from '../PhotoCaption';
+import PhotoCutline from '../PhotoCutline';
 
 import './PhotoInfo.css';
 

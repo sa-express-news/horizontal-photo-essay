@@ -3,8 +3,8 @@
 import React, {Component} from 'react';
 
 import StoryTop from '../StoryTop';
-import StoryTopDesktop from '../StoryTopDesktop/StoryTopDesktop';
-import SocialBlock from '../SocialBlock/SocialBlock';
+import StoryTopDesktop from '../StoryTopDesktop';
+import SocialBlock from '../SocialBlock';
 
 class StoryTopContainer extends Component{
 	props: {
@@ -31,9 +31,9 @@ class StoryTopContainer extends Component{
     const isDesktopScreen = this.state.isDesktopScreen;
   	return(
       <div>
-        <SocialBlock />
   			{isDesktopScreen && <StoryTopDesktop data={this.props.data} />}
         {!isDesktopScreen && <StoryTop data={this.props.data} />}
+        <SocialBlock />
       </div>
   	)
   }

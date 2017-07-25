@@ -482,7 +482,7 @@
     "6": [
       {
         "type": "sectionheading",
-        "value": "Photo Essay 2"
+        "value": "Photo Essay"
       },
       {
         "type": "photoessay",
@@ -553,12 +553,15 @@
         "value": "Bassey hasn’t received a scholarship offer from Incarnate Word. Jurenovich, the Incarnate Word vice president, said it would be unrealistic to expect a player of Bassey’s caliber to end up with the Cardinals."
       },
       {
-        "type": "credit",
-        "value": "adam.zuvanich@express-news.net"
-      },
-      {
-        "type": "credit",
-        "value": "Twitter: @AZuvanich"
+        "type": "credits",
+        "value": [
+          {
+            "credit": "adam.zuvanich@express-news.net"
+          },
+          {
+            "credit": "Twitter: @AZuvanich"
+          }
+        ]
       }
     ]
   }

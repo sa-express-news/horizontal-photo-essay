@@ -1,7 +1,7 @@
 // @flow
 
 import React, {Component} from 'react';
-import Paragraph from '../Paragraph/Paragraph';
+import Paragraph from '../Paragraph';
 
 class IntroParagraph extends Component {
 	props: {

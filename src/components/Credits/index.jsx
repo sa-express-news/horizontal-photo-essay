@@ -8,7 +8,7 @@ import './Credits.css';
 
 class Credits extends Component{
 	props: {
-		credits: Array<string>
+		credits: Array<Object>
 	};
 
 	render(){

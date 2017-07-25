@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 
-import PhotoInfo from '../PhotoInfo/PhotoInfo';
+import PhotoInfo from '../PhotoInfo';
 
 import './SmallPhotoDesktopContainerReverse.css';
 

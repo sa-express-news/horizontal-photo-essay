@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 
-import StoryMetaDesktop from '../StoryMetaDesktop/StoryMetaDesktop';
+import StoryMetaDesktop from '../StoryMetaDesktop';
 
 import './StoryTopDesktop.css';
 

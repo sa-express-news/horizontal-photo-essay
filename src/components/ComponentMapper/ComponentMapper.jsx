@@ -3,7 +3,7 @@
 import React from 'react';
 
 import Paragraph from '../Paragraph';
-import SectionHeading from '../SectionHeading/SectionHeading';
+import SectionHeading from '../SectionHeading';
 import FullPhoto from '../FullPhoto/FullPhoto';
 import FullPhotoContainer from '../FullPhotoContainer/FullPhotoContainer';
 import SmallPhotoDesktop from '../SmallPhotoDesktop/SmallPhotoDesktop';
@@ -13,10 +13,11 @@ import Photos from '../Photos/Photos';
 import PhotoEssayContainer from '../PhotoEssayContainer/PhotoEssayContainer';
 import Annotation from '../Annotation/Annotation';
 import Annotations from '../Annotations/Annotations';
-import PullQuote from '../PullQuote/PullQuote';
+import PullQuote from '../PullQuote'; 
 import RelatedContent from '../RelatedContent/RelatedContent';
 import ResponsiveiFrame from '../ResponsiveiFrame/ResponsiveiFrame';
 import Video from '../Video/Video';
+import Credits from '../Credits';
 
 const loadPhoto = (path: string) => {
 	return require(`../../images/${path}`);
@@ -25,7 +26,7 @@ const loadPhoto = (path: string) => {
 export default{
 	text: (object: Object, key: number) => <Paragraph text={object.value} key={key}/>,
 
-	credit: (object: Object, key: number) => <Paragraph text={object.value} italic={true} key={key}/>,
+	credits: (object: Object, key: number) => <Credits credits={object.value} key={key}/>,
 
 	sectionheading: (object: Object, key: number) => <SectionHeading text={object.value} key={key}/>,
 

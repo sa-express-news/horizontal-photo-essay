@@ -2,8 +2,8 @@
 
 import React, {Component} from 'react';
 
-import PhotoInfo from '../PhotoInfo/PhotoInfo';
-import SlideshowButton from '../SlideshowButton/SlideshowButton';
+import PhotoInfo from '../PhotoInfo';
+import SlideshowButton from '../SlideshowButton';
 
 import './SlideshowPhoto.css';
 

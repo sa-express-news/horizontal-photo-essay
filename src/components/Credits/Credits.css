@@ -1,0 +1,18 @@
+.CreditsContainer {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.Credit {
+    color: #000;
+    font-family: 'Sanchez', serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .CreditsContainer {
+        width: 80%;
+    }
+}

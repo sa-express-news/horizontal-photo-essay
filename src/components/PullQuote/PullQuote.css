@@ -1,6 +1,6 @@
 .PullQuoteContainer {
     color: #000;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -21,7 +21,7 @@
 @media (min-width: 768px) {
     .PullQuoteContainer {
         float: left;
-        margin-left: 10%;
+        margin-left: 15%;
         margin-right: 2%;
 /*        text-align: right;*/
         width: 40%;

@@ -3,7 +3,7 @@
     font-size: 14px;
     color: #000;
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
 }
 
 
@@ -14,7 +14,7 @@
 
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
     .PhotoInfo {
         width: 100%;
     }

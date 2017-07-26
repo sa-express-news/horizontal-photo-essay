@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => (
 	<div className="ExpressNewsLogo">
-		<svg version="1.1" viewBox="0 0 24 24" width="24px" height="24px" role="img">
+		<svg version="1.1" viewBox="0 0 24 24" role="img">
 	    <g transform="translate(0.000000,25.000000) scale(0.135) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
 	      <path d="M0 915 l0 -915 915 0 915 0 0 915 0 915 -915 0 -915 0 0 -915z m791
 	      509 c29 -14 33 -15 41 0 5 8 15 13 23 10 11 -5 -1 -26 -46 -85 l-60 -79 -29

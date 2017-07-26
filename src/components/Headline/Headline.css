@@ -8,6 +8,7 @@
 @media (min-width: 768px){
     .Headline{
         font-size: 44px;
+        margin: 0;
     }
 }
 
@@ -18,7 +19,6 @@
 @media (min-width: 1024px) {
     .Headline {
         font-size: 2em;
-        margin: 0;
     }
 }
 

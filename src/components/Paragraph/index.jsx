@@ -15,22 +15,13 @@ class Paragraph extends Component {
 	};
 
 	render(){
-		let graph = null;
 
 		let style = {
 			fontStyle: this.props.italic ? 'italic' : 'normal'
 		};
 
-		if(this.props.isIntro){
-			graph = <p className='Paragraph'><span className='dropCap'>{this.props.text.substring(0,1)}</span>{this.props.text.slice(1)}</p>;
-		} else{
-			graph = <p className='Paragraph' style={style}>{this.props.text}</p>
-		}
-
 		return(
-			<div>
-			{graph}
-			</div>
+			<p className='Paragraph' style={style}>{this.props.text}</p>
 		)
 	}
 }

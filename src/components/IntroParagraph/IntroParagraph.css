@@ -1,4 +1,4 @@
-.Paragraph {
+.IntroParagraph {
     clear: both;
     line-height: 1.25;
     margin: .5em auto;
@@ -6,20 +6,19 @@
 }
 
 @media (min-width: 640px) {
-    .Paragraph {
+    .IntroParagraph {
         font-size: 1em;
     }
 }
 
 @media (min-width: 768px) {
-    .Paragraph {
-        /*font-size: 2.6vh;*/
+    .IntroParagraph {
         width: 70%;
     }
 }
 
 @media (min-width: 1024px) {
-    .Paragraph {
+    .IntroParagraph {
         font-size: 1.25em;
         margin: 0 0 2vh 22vh;
         line-height: 1.5;
@@ -27,7 +26,23 @@
     }
 }
 
-.Paragraph .DropCap {
+.IntroParagraph:first-child:first-letter {
+    color: #FCB001;
+        float: left;
+    font-family: 'Suez One', serif;
+    font-size: 80px;
+    /*    padding-right: 0;
+    padding-left: 3px;
+    margin-bottom: -.25em;*/
+    /*    margin-right: 5em;*/
+    padding-right: 10px;
+    margin-bottom: -30px;
+    margin-top: -20px;
+}
+
+
+
+/*.IntroParagraphContainer .DropCap {
     color: #FCB001;
     float: left;
     font-family: 'Suez One', serif;
@@ -38,7 +53,7 @@
 }
 
 @media (min-width: 768px) {
-    .Paragraph .DropCap {
+    .IntroParagraphContainer .DropCap {
         font-size: 140px;
     }
-}
+}*/

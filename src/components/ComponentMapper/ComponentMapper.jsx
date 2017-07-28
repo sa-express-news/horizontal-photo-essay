@@ -3,6 +3,7 @@
 import React from 'react';
 
 import Paragraph from '../Paragraph';
+import IntroParagraph from '../IntroParagraph';
 import SectionHeading from '../SectionHeading';
 import FullPhoto from '../FullPhoto/FullPhoto';
 import FullPhotoContainer from '../FullPhotoContainer/FullPhotoContainer';
@@ -25,6 +26,8 @@ const loadPhoto = (path: string) => {
 
 export default{
 	text: (object: Object, key: number) => <Paragraph text={object.value} key={key}/>,
+
+	intrograph: (object: Object, key: number) => <IntroParagraph text={object.value.text} key={key}/>,
 
 	credits: (object: Object, key: number) => <Credits credits={object.value} key={key}/>,
 

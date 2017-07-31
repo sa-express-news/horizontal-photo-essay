@@ -353,41 +353,13 @@
         "value": "St. Anthony played up after leaving TAPPS, which had placed the school in a division that included local schools Central Catholic and Antonian Prep, as well as St. Joseph Academy in Brownsville."
       },
       {
-        "type": "text",
-        "value": "With its foreign players unleashed in the Texas Christian Athletic League, St. Anthony played a regional and national schedule last season, competing against some of the country’s top preparatory programs and players at showcases in Florida, Kentucky, Massachusetts, New York and South Dakota."
-      },
-      {
-        "type": "text",
-        "value": "Former interim coach Casey Barksdale, who replaced Merritt after he was fired, said St. Anthony was invited to those events and received stipends to help cover travel expenses because of Bassey."
-      },
-      {
-        "type": "text",
-        "value": "Athlos Academy, the local public charter school, also is a member with St. Anthony in TCAL’s 4A division, which the league established for basketball powers. Auriantal’s brother, Ralph Auriantal, is an assistant basketball coach at Athlos."
-      },
-      {
-        "type": "photo",
+        "type": "subscribe",
         "value": {
           "source": "barksdale.jpg",
           "caption": "St. Anthony head coach Casey Barksdale huddles with the team during the game against Southwest Christian held Saturday Jan. 21, 2017 at Athlos Leadership Academy.",
           "cutline": "Edward A. Ornelas / San Antonio Express-News",
           "type": "full"
         }
-      },
-      {
-        "type": "text",
-        "value": "Other schools in the division include Southwest Christian, two Houston schools — Chris Walker Academy and Pro-Vision School — and Life Preparatory Academy in Wichita, Kansas."
-      },
-      {
-        "type": "text",
-        "value": "St. Anthony’s international players all took the court in February against Southwest Christian, which head coach Charles Baker said is barred from competing against schools in the Arkansas Activities Association, the state’s main prep league."
-      },
-      {
-        "type": "text",
-        "value": "Baker said more than half of the 12 players on the Lions’ roster were international. He also said nine of those players are Division I college prospects."
-      },
-      {
-        "type": "text",
-        "value": "Southwest Christian is excluded from the Arkansas Activities Association because it has boarding students, association executive director Joey Walters said."
       }
     ],
     "5": [
@@ -564,5 +536,94 @@
         ]
       }
     ]
-  }
+  },
+  "sections.5": [
+    {
+      "type": "sectionheading",
+      "value": "Custody dispute over Bassey"
+    },
+    {
+      "type": "text",
+      "value": "With Bassey’s growing reputation as a future star — he averaged about 22 points, 17 rebounds and six blocked shots per game last season — Hennssy Auriantal followed through with the plan stated by his nonprofit to gain custody of him."
+    },
+    {
+      "type": "text",
+      "value": "Last December, Auriantal and his wife, Nathalie Romao, petitioned Bexar County District Court to become Bassey’s legal guardians. According to the petition, Auriantal and Romao had “actual care, control and possession” of Bassey for at least six months."
+    },
+    {
+      "type": "text",
+      "value": "It also stated that the couple expected to enter in an agreement with Bassey’s father in Nigeria, Akpan Ebong Bassey."
+    },
+    {
+      "type": "text",
+      "value": "A waiver of service notarized in Nigeria, and bearing a signature, address and two phone numbers for Bassey’s father, was filed in court Jan. 11."
+    },
+    {
+      "type": "text",
+      "value": "But on March 16, an objection was filed by a Nigerian attorney claiming to represent Bassey’s father. The letter of objection states Akpan Bassey is illiterate and signed the waiver of service under false pretenses. It also says Bassey’s father did not want to enter into a guardianship agreement with Auriantal and Romao."
+    },
+    {
+      "type": "photo",
+      "value": {
+        "source": "bassey-call.jpg",
+        "caption": "St. Anthony's Charles Bassey looks for a call during the game against Southwest Christian held Saturday Jan. 21, 2017 at Athlos Leadership Academy.",
+        "cutline": "Edward A. Ornelas / San Antonio Express-News",
+        "type": "small-left"
+      }
+    },
+    {
+      "type": "text",
+      "value": "Also filed was a power of attorney document, dated Feb. 5, 2016, stating Bassey’s father granted management rights for his son to John Faniran, who runs basketball tournaments in Nigeria and said he helped Bassey get a scholarship at a Nigerian private school for two years before he came to San Antonio."
+    },
+    {
+      "type": "text",
+      "value": "Faniran said he reached an agreement with Auriantal to find an American school for Bassey and his son, B.J. Faniran, who also enrolled at St. Anthony in 2015-16, was a senior this year and played basketball and football at the school."
+    },
+    {
+      "type": "text",
+      "value": "B.J. Faniran also has been featured in Yes II Success social media posts, one of which says he received a scholarship offer from the Incarnate Word football program. John Faniran confirmed his son received an offer but said it was pulled before national signing day in February."
+    },
+    {
+      "type": "text",
+      "value": "When reached by phone on March 7, a man who answered one of the Nigerian numbers listed for Bassey’s father said, “Someone take my son Charles. I want to come see him. He lost his mother ... I’m still worried.”"
+    },
+    {
+      "type": "text",
+      "value": "On March 31, Bexar County Judge Antonia Arteaga granted Auriantal and his wife custody of Bassey. A lawyer hired by Faniran to represent Bassey’s father is appealing the decision."
+    },
+    {
+      "type": "text",
+      "value": "Unstated in the custody dispute is the money Bassey and his agent stand to earn if he becomes a high NBA draft pick. Top players in recent drafts have signed rookie contracts for more than $20 million."
+    },
+    {
+      "type": "pullquote",
+      "value": {
+        "quote": "Someone take my son Charles. I want to come see him. He lost his mother ... I’m still worried."
+      }
+    },
+    {
+      "type": "text",
+      "value": "Because he plays for a U.S. school, Bassey has to be at least 19 years old and one year removed from high school to qualify for the NBA draft. Foreign stars who play outside the U.S. can enter the draft straight out of high school. In 2016, Thon Maker, a 7-foot-1 Sudanese forward who played prep basketball in Canada, was the 10th pick in the draft out of high school and signed a rookie contract with the Milwaukee Bucks estimated to be worth more than $5 million over two years."
+    },
+    {
+      "type": "text",
+      "value": "With his skill set, Bassey could be compared to Ben Simmons, the No. 1 pick in 2016. An Australian 6-foot-10 forward, Simmons played prep basketball at Montverde Academy in Florida. He played one year of college ball at Louisiana State University then entered the NBA draft, becoming the ultimate “one-and-done” college player. Drafted by the Philadelphia 76ers, he signed a rookie contract estimated by Forbes to be worth more than $26 million over four years."
+    },
+    {
+      "type": "text",
+      "value": "Bassey’s presence at St. Anthony already has paid dividends for the school and Yes II Success."
+    },
+    {
+      "type": "text",
+      "value": "In February 2016, Yes II Success signed a $20,000 sponsorship contract with adidas. The deal came a week after St. Anthony signed a term sheet with the apparel maker for an undisclosed amount, according to a copy of the contract. Incarnate Word said in a 2015 release that it had signed a seven-year sponsorship agreement with adidas."
+    },
+    {
+      "type": "text",
+      "value": "Anthony Coleman, an assistant men’s basketball coach at Arizona State, was the adidas Sports Marketing representative named on the agreements with St. Anthony and Yes II Success. Coleman confirmed he put the deals together, but was not involved in the agreement with Incarnate Word. He said he reached out to St. Anthony because it had an up-and-coming program."
+    },
+    {
+      "type": "text",
+      "value": "When asked if Bassey was a factor in seeking the sponsorship agreements, Coleman said, “I would assume so. He’s top five in the country.”"
+    }
+  ]
 }

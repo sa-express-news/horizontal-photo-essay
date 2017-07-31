@@ -11,7 +11,6 @@ class IntroParagraph extends Component {
 	};
 
 	render(){
-		const firstLetter = this.props.text.substring(0,1);
 		return(
 
 				<p className='IntroParagraph'>{this.props.text}</p>

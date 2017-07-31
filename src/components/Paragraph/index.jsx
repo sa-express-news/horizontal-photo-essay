@@ -21,7 +21,9 @@ class Paragraph extends Component {
 		};
 
 		return(
+			
 			<p className='Paragraph' style={style}>{this.props.text}</p>
+
 		)
 	}
 }

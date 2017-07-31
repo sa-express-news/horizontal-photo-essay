@@ -1,3 +1,4 @@
+// @flow
 
 import React, {Component} from 'react';
 import { CSSTransitionGroup } from 'react-transition-group'
@@ -52,7 +53,7 @@ class Slideshow extends Component {
    		}));
 	}
 
-	handleTouchStart = (event: Event) =>{
+	handleTouchStart = (event: TouchEvent) =>{
 
 		const theTouch = event.touches[0];
 
@@ -62,8 +63,10 @@ class Slideshow extends Component {
 		}));
 	}
 
-	handleTouchEnd = (event: Event) =>{
+	handleTouchEnd = (event: TouchEvent) =>{
 		const theTouch = event.changedTouches[0];
+
+		if(this.state.touchStartX === null || this.state.touchStartY === null) return;
 
 		if (this.state.touchStartX - theTouch.screenX >= 75){
 			this.moveBackward();
@@ -75,7 +78,7 @@ class Slideshow extends Component {
 
 	}
 
-	shouldComponentUpdate = (nextProps, nextState) =>{
+	shouldComponentUpdate = (nextProps: any, nextState: any) =>{
 		const millisecondsSinceLastChange = new Date().getTime() - this.state.lastChange.getTime();
 
 		if (millisecondsSinceLastChange < 400){

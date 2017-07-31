@@ -4,7 +4,6 @@ import React, {Component} from 'react';
 
 import LeadPhotoContainer from '../LeadPhotoContainer';
 import StoryMeta from '../StoryMeta';
-import StorySeriesBlock from '../StorySeriesBlock';
 
 import './StoryTop.css';
 

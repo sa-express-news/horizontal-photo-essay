@@ -2,8 +2,8 @@
 
 import React, {Component} from 'react';
 
-import FullPhotoContainer from '../FullPhotoContainer/FullPhotoContainer';
-import FullPhoto from '../FullPhoto/FullPhoto';
+import FullPhotoContainer from '../FullPhotoContainer';
+import FullPhoto from '../FullPhoto';
 
 class Photos extends Component{
 	props: {

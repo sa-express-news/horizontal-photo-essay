@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // grommet components
 import Section from 'grommet/components/Section';
 
-import PhotoEssay from '../PhotoEssay/PhotoEssay';
+import PhotoEssay from '../PhotoEssay';
 
 import './PhotoEssayContainer.scss';
 

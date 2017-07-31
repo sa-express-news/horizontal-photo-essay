@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 
-import Annotation from '../Annotation/Annotation';
+import Annotation from '../Annotation';
 
 import './Annotations.css';
 

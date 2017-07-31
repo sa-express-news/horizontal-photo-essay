@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 
-import LeadPhoto from '../LeadPhoto/LeadPhoto';
+import LeadPhoto from '../LeadPhoto';
 import PhotoInfo from '../PhotoInfo';
 
 import './LeadPhotoContainer.css';

@@ -14,7 +14,7 @@
         display: inline-flex;
         flex-direction: column;
         float: right;
-        margin: 0 25% 0 2%;
+        margin: 0 25% 1% 2%;
         width: 25%;
     }
     .SmallPhotoDesktopContainerReverse .PhotoInfo p {

@@ -5,19 +5,21 @@ import React from 'react';
 import Paragraph from '../Paragraph';
 import IntroParagraph from '../IntroParagraph';
 import SectionHeading from '../SectionHeading';
-import FullPhoto from '../FullPhoto/FullPhoto';
-import FullPhotoContainer from '../FullPhotoContainer/FullPhotoContainer';
-import SmallPhotoDesktop from '../SmallPhotoDesktop/SmallPhotoDesktop';
-import SmallPhotoDesktopContainer from '../SmallPhotoDesktopContainer/SmallPhotoDesktopContainer';
-import SmallPhotoDesktopContainerReverse from '../SmallPhotoDesktopContainerReverse/SmallPhotoDesktopContainerReverse';
-import Photos from '../Photos/Photos';
-import PhotoEssayContainer from '../PhotoEssayContainer/PhotoEssayContainer';
-import Annotation from '../Annotation/Annotation';
-import Annotations from '../Annotations/Annotations';
+import FullPhoto from '../FullPhoto';
+import FullPhotoContainer from '../FullPhotoContainer';
+import SmallPhotoDesktop from '../SmallPhotoDesktop';
+import SmallPhotoDesktopContainer from '../SmallPhotoDesktopContainer';
+import SmallPhotoDesktopContainerReverse from '../SmallPhotoDesktopContainerReverse';
+import Photos from '../Photos';
+import Slideshow from '../Slideshow';
+import Subscribe from '../Subscribe';
+import PhotoEssayContainer from '../PhotoEssayContainer';
+import Annotation from '../Annotation';
+import Annotations from '../Annotations';
 import PullQuote from '../PullQuote'; 
-import RelatedContent from '../RelatedContent/RelatedContent';
-import ResponsiveiFrame from '../ResponsiveiFrame/ResponsiveiFrame';
-import Video from '../Video/Video';
+import RelatedContent from '../RelatedContent';
+import ResponsiveiFrame from '../ResponsiveiFrame';
+import Video from '../Video';
 import Credits from '../Credits';
 
 const loadPhoto = (path: string) => {
@@ -57,6 +59,8 @@ export default{
 	
 	photos: (object: Object, key: number) => <Photos photos={object.value} key={key}/>,
 
+	slideshow: (object: Object, key: number) => <Slideshow photos={object.value} key={key}/>,
+
 	loadPhoto: function(path: string){
 		return require(`../../images/${path}`);
 	},
@@ -68,6 +72,8 @@ export default{
 	photoessay: (object: Object, key: number) => <PhotoEssayContainer photos={object.value} key={key} loadPhoto={loadPhoto} />,
 
 	pullquote: (object: Object, key: number) => <PullQuote quote={object.value.quote} key={key} />,
+
+	subscribe: (object: Object, key: number) => <Subscribe key={key} />,
 
 	related: (object: Object, key: number) => <RelatedContent headline={object.value.headline} link={object.value.link} key={key} />,
 

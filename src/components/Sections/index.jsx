@@ -2,8 +2,8 @@
 
 import React, {Component} from 'react';
 
-import Section from '../Section/Section';
-import ComponentMapper from '../ComponentMapper/ComponentMapper';
+import Section from '../Section';
+import ComponentMapper from '../ComponentMapper';
 
 class Sections extends Component {
 	props: {

@@ -5,13 +5,7 @@
 
 @media (min-width: 768px){
 	.Slideshow{
-		margin: 5em 0;
-	}
-}
-
-@media (min-width: 1024px){
-	.Slideshow{
-		margin: 7.5em 0;
+		margin: 2% 0;
 	}
 }
 

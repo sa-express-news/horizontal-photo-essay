@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 import { CSSTransitionGroup } from 'react-transition-group'
 
-import SlideshowPhoto from '../SlideshowPhoto/SlideshowPhoto';
+import SlideshowPhoto from '../SlideshowPhoto';
 
 import './Slideshow.css';
 

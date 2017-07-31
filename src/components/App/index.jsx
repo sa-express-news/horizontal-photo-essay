@@ -2,8 +2,8 @@
 
 import React, { Component } from 'react';
 
-import StoryTopContainer from '../StoryTopContainer/StoryTopContainer';
-import Sections from '../Sections/Sections';
+import StoryTopContainer from '../StoryTopContainer';
+import Sections from '../Sections';
 
 import Story from '../../story.json';
 import './App.css';

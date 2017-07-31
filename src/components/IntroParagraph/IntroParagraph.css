@@ -20,7 +20,7 @@
 @media (min-width: 1024px) {
     .IntroParagraph {
         font-size: 1.25em;
-        margin: 0 0 2vh 22vh;
+        margin: 0 auto 2vh auto;
         line-height: 1.5;
         width: 50%;
     }
@@ -28,17 +28,34 @@
 
 .IntroParagraph:first-child:first-letter {
     color: #FCB001;
-        float: left;
+    float: left;
     font-family: 'Suez One', serif;
     font-size: 80px;
-    /*    padding-right: 0;
-    padding-left: 3px;
-    margin-bottom: -.25em;*/
-    /*    margin-right: 5em;*/
     padding-right: 10px;
-    margin-bottom: -30px;
-    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-top: -15px;
 }
+
+@media(min-width: 768px) {
+    .IntroParagraph:first-child:first-letter {
+        font-size: 130px;
+        margin-bottom: -32px;
+        margin-top: -35px;
+    }
+}
+
+@media(min-width: 768px) {
+    .IntroParagraph:first-child:first-letter {
+        font-size: 150px;
+        margin-bottom: -50px;
+    margin-top: -50px;
+    }
+}
+
+
+
+
+
 
 
 

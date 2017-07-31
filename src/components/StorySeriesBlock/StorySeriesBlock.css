@@ -21,6 +21,13 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .StorySeriesBlock {
+        font-size: 21px;
+        margin-bottom: .8em;
+    }
+}
+
 .StorySeriesBlock p {
     margin-bottom: 0;
 }

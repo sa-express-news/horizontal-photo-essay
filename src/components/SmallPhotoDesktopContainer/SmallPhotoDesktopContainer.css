@@ -1,13 +1,11 @@
-@media (max-width: 767px) {
-    .SmallPhotoDesktopContainer {
-        margin: 2em 0 1.5em;
-    }
+.SmallPhotoDesktopContainer {
+    margin: 2em 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .SmallPhotoDesktopContainer {
-        margin: 0 auto;
-        width: 80%;
+        margin: 1.5em auto;
+        width: 90%;
     }
 }
 
@@ -16,7 +14,9 @@
         display: inline-flex;
         flex-direction: column;
         float: left;
-        margin: 0 1em 0 22vh;
+        /*        margin: 0 1em 0 22vh;*/
+        margin-left: 25%;
+        margin-right: 2%;
         width: 25%;
     }
     .SmallPhotoDesktopContainer .PhotoInfo {

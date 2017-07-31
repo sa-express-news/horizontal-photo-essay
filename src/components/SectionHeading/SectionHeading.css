@@ -1,9 +1,10 @@
 .SectionHeading {
-    margin: 1em auto;
-    width: 85%;
     color: #f60000;
+    font-size: 1em;
     font-weight: bold;
     line-height: 1.1;
+    margin: 1em auto;
+    width: 85%;
 }
 
 @media (min-width: 640px) {
@@ -18,22 +19,8 @@
 
 @media only screen and (min-width: 1024px) {
     .SectionHeading {
-        margin: 0 0 2vh 22vh;
-        line-height: 1.5;
+        font-size: 1.25em;
+        margin: 0 auto 2vh auto;
         width: 50%;
-    }
-}
-
-.dropCap {
-    font-size: 8vh;
-    margin-right: 3vh;
-    display: block;
-    font-weight: bold;
-    float: left;
-}
-
-@media (min-width: 768px) {
-    .dropCap {
-        font-size: 7vh;
     }
 }

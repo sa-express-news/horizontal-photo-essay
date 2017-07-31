@@ -22,9 +22,8 @@
     .PullQuoteContainer {
         float: left;
         margin-left: 15%;
-        margin-right: 2%;
-/*        text-align: right;*/
-        width: 40%;
+        margin-right: 4%;
+        width: 35%;
     }
     .PullQuote {
         font-size: 24px;
@@ -34,21 +33,16 @@
 @media (min-width: 1024px) {
     .PullQuoteContainer {
         clear: both;
-        width: 35%;
+        margin-left: 25%;
+        width: 25%;
     }
     .PullQuote {
-        margin-left: 30%;
-    }
-}
-
-@media (min-width: 1028px) {
-    .PullQuote {
-        margin-left: 35%;
+/*        margin-left: 30%;*/
     }
 }
 
 @media (min-width: 1440px) {
     .PullQuote {
-        margin-left: 26%;
+/*        margin-left: 26%;*/
     }
 }

@@ -1,5 +1,4 @@
 .Paragraph {
-    clear: both;
     line-height: 1.25;
     margin: .5em auto;
     width: 85%;
@@ -13,7 +12,6 @@
 
 @media (min-width: 768px) {
     .Paragraph {
-        /*font-size: 2.6vh;*/
         width: 70%;
     }
 }
@@ -21,8 +19,7 @@
 @media (min-width: 1024px) {
     .Paragraph {
         font-size: 1.25em;
-        margin: 0 0 2vh 22vh;
-        line-height: 1.5;
+        margin: 0 auto 2vh auto;
         width: 50%;
     }
 }

@@ -18,10 +18,6 @@ class SlideshowPhoto extends Component {
 		handleTouchEnd: Function
 	};
 
-	loadPhoto = (path: string) =>{
-		return require(`../../images/${path}`);
-	}
-
 	render(){
 		return(
 			<div className='SlideshowPhotoContainer'>

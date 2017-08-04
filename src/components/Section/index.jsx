@@ -10,10 +10,6 @@ class Section extends Component {
 		mapper: Object
 	};
 
-	loadPhoto = (path: string) =>{
-		return require(`../../images/${path}`);
-	}
-
 	render(){
 		const { data, mapper } = this.props;
 

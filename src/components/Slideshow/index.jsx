@@ -26,10 +26,6 @@ class Slideshow extends Component {
 	 	this.moveBackward = this.moveBackward.bind(this);
 	}
 
-	loadPhoto = (path: string) =>{
-		return require(`../../images/${path}`);
-	}
-
 	moveForward = () =>{
 			let maxIndex = this.props.photos.length - 1;
 			let currentIndex = this.state.activeIndex;

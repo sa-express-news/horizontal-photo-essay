@@ -10,14 +10,9 @@ class Photos extends Component{
 		photos: Array<any>
 	};
 
-	loadPhoto = (path: string) =>{
-		return require(`../../images/${path}`);
-	}
-
 	render(){
 		const components = this.props.photos.map((photo: Object, key: number)=>{
-			const photoPath = this.loadPhoto(photo.source);
-			let photoComponent = <FullPhoto src={photoPath} alt={photo.caption}/>;
+			let photoComponent = <FullPhoto src={photo.source} alt={photo.caption}/>;
 
 			return <FullPhotoContainer caption={photo.caption} cutline={photo.cutline} key={key}>{photoComponent}</FullPhotoContainer>
 		});

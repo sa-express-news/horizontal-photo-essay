@@ -1,6 +1,8 @@
 .SubscribeFooter {
     padding: .25em 0em;
     background: #E5E5E5;
+    font-family: 'Sanchez', serif;
+    font-weight: normal;
     text-align: center;
     width: 100%;
 }
@@ -9,13 +11,17 @@
     margin: 5px;
 }
 
+.SubscribeFooter h4 {
+    font-family: 'Suez One', serif;
+}
+
 .SubscribeFooter>div {
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
 }
 
 .SubscribeFooter button {
-    width: 75%;
+    width: 65%;
 }
 
 @media (min-width: 1024px) {
@@ -23,6 +29,7 @@
         width: 20%;
     }
 }
+
 
 
 /*.SubscribeFooterContainer {

@@ -1,3 +1,5 @@
+
+
 import React, { Component } from 'react';
 
 // grommet components
@@ -219,6 +221,7 @@ class PhotoEssayContainer extends Component {
     render() {
         const { photos, loadPhoto } = this.props;
         return (
+            <div className="PhotoEssayContainer">
             <Section
                 pad="none"
                 justify="center"
@@ -239,6 +242,7 @@ class PhotoEssayContainer extends Component {
                     getEssayClass={(...args) => this.getEssayClass(...args)}
                 />
             </Section>
+            </div>
         );
     }
 }

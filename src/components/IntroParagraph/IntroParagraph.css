@@ -13,6 +13,7 @@
 
 @media (min-width: 768px) {
     .IntroParagraph {
+        font-size: 1.1em;
         width: 70%;
     }
 }
@@ -40,17 +41,19 @@
     .IntroParagraph:first-child:first-letter {
         font-size: 130px;
         margin-bottom: -32px;
-        margin-top: -35px;
+        margin-top: -30px;
     }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 1024px) {
     .IntroParagraph:first-child:first-letter {
         font-size: 150px;
         margin-bottom: -50px;
-    margin-top: -50px;
+        margin-top: -50px;
     }
 }
+
+
 
 
 

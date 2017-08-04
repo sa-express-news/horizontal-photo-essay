@@ -8,7 +8,8 @@ import './PullQuote.css';
 
 class PullQuote extends Component {
 	props: {
-		quote: string
+		quote: string,
+		source: string
 	};
 
 	render(){
@@ -16,7 +17,7 @@ class PullQuote extends Component {
 			<div className='PullQuoteContainer'>
 				<LeftYellowBorder>
 					<p className='PullQuote'>"{this.props.quote}"</p>
-					<p className='PullQuoteAttribution'> - Jim Jones, a creepy cult guy from Alabama or some such other state</p>
+					<p className='PullQuoteAttribution'> - {this.props.source}</p>
 				</LeftYellowBorder>
 			</div>
 		)

@@ -1,6 +1,6 @@
 .Subhead {
     font-family: 'Sanchez', serif;
-    font-size: 17px;
+    font-size: 20.4px;
     font-weight: normal;
     line-height: 1.25;
     margin-top: 0;
@@ -15,7 +15,7 @@
 
 @media (min-width: 1024px){
     .Subhead{
-        font-size: 20px;
+        font-size: 22px;
         width: 80%;
     }
 }

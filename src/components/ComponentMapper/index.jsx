@@ -23,7 +23,7 @@ import Video from '../Video';
 import Credits from '../Credits';
 
 const loadPhoto = (path: string) => {
-	return require(`../../images/${path}`);
+	return require(`${path}`);
 };
 
 export default{
@@ -37,7 +37,7 @@ export default{
 
 	photo: function(object: Object, key: number){
 		const photo = object.value;
-		const photoPath = loadPhoto(photo.source);
+		const photoPath = photo.source;
 		switch (photo.type){
 			
 			case 'full': 
@@ -62,7 +62,7 @@ export default{
 	slideshow: (object: Object, key: number) => <Slideshow photos={object.value} key={key}/>,
 
 	loadPhoto: function(path: string){
-		return require(`../../images/${path}`);
+		return require(`${path}`);
 	},
 
 	annotation: (object: Object, key: number) => <Annotation text={object.value.text} annotation={object.value.annotation} key={key} />,
@@ -71,9 +71,9 @@ export default{
 
 	photoessay: (object: Object, key: number) => <PhotoEssayContainer photos={object.value} key={key} loadPhoto={loadPhoto} />,
 
-	pullquote: (object: Object, key: number) => <PullQuote quote={object.value.quote} key={key} />,
+	pullquote: (object: Object, key: number) => <PullQuote quote={object.value.quote} source={object.value.source} key={key} />,
 
-	subscribe: (object: Object, key: number) => <Subscribe key={key} />,
+	subscribe: (object: Object, key: number) => <Subscribe link={object.value.link} key={key} />,
 
 	related: (object: Object, key: number) => <RelatedContent headline={object.value.headline} link={object.value.link} key={key} />,
 

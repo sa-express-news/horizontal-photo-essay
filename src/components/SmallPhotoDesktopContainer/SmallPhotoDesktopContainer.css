@@ -5,7 +5,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .SmallPhotoDesktopContainer {
         margin: 1.5em auto;
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -18,7 +18,7 @@
         width: 25%;
     }
     .SmallPhotoDesktopContainer .PhotoInfo {
-        margin: 0;
+/*        margin: 0;*/
 /*        text-align: right;*/
     }
     .SmallPhotoDesktopContainer .PhotoInfo p {

@@ -7,6 +7,12 @@
     position: relative;
 }
 
+@media (max-width: 600px) {
+    .SocialBlock {
+        margin: .6em auto;
+    }
+}
+
 @media (min-width: 600px) {
     .SocialBlock {
         top: -50px;
@@ -15,6 +21,6 @@
 
 @media (min-width: 1024px) {
     .SocialBlock {
-        top: -85px;
+/*        top: -85px;*/
     }
 }

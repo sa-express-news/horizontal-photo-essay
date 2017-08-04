@@ -17,7 +17,7 @@ class StoryMeta extends Component{
 		return(
 			<div className='StoryMeta'>
 				<SkinnyContainer width={85}>
-					<StorySeriesBlock text='Story Series Here'/>
+					<StorySeriesBlock text={this.props.meta.series}/>
 					<Headline text={this.props.meta.headline}/> 
 					<LeftYellowBorder>
 						<Subhead text={this.props.meta.subhead}/>

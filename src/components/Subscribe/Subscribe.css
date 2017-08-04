@@ -1,15 +1,26 @@
 .SubscribeContainer {
     padding: 0em 0em .5em;
-    border-bottom: 1.5px solid gray;
-    border-top: 1.5px solid gray;
+/*    border-bottom: 1.5px solid gray;
+    border-top: 1.5px solid gray;*/
+    font-family: 'Sanchez';
     margin: 0 auto;
     width: 90%;
 }
 
 .SubscribeContainer h4 {
     color: #080808;
+    font-family: 'Suez One', serif;
     font-size: 130%;
+    font-weight: normal;
     margin: .75em 0;
+}
+
+.SubscribeContainer p{
+    margin: 0;
+}
+
+.SubscribeContainer button{
+    margin-top: .5em;
 }
 
 
@@ -29,7 +40,7 @@
         margin-left: 2%;
         margin-right: 15%;
         text-align: left;
-        width: 40%;
+        width: 35%;
     }
 }
 

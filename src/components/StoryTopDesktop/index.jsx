@@ -12,15 +12,10 @@ class StoryTopDesktop extends Component {
 		data: Object
 	};
 
-	loadPhoto = (path: string) =>{
-		return require(`../../images/${path}`);
-	}
-
 	render(){
-		const photoPath = this.loadPhoto(this.props.data.image.source);
 
 		const style = {
-			backgroundImage: `linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(${photoPath})`
+			backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.1), rgba(0,0,0,.1), rgba(0,0,0,1)), url(${this.props.data.image.source})`
 		};
 
 		return(

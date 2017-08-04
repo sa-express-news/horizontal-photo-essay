@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 
-import Annotations from '../Annotations/Annotations';
+import Annotations from '../../Annotations';
 
 import './AbortionAnnotations.css';
 

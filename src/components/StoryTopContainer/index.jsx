@@ -21,7 +21,8 @@ class StoryTopContainer extends Component{
  	}
 
   setIsDesktop = () => {
-    const isDesktopScreen = window.innerWidth > 1023;
+    //We check height because iPad Pros are 1024x1366, and our desktop story top looks awful on them.
+    const isDesktopScreen = window.innerWidth > 1023 && window.innerHeight !== 1366;
     if (isDesktopScreen !== this.state.isDesktopScreen) {
       this.setState({ isDesktopScreen });
     }

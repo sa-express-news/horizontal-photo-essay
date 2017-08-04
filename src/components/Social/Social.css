@@ -2,7 +2,7 @@
 	cursor: pointer;
 }
 
-.Social svg {
+.Social img {
     background: #808080;
     padding: 5px;
     width: 2em;
@@ -10,16 +10,16 @@
 }
 
 @media (min-width: 1024px) {
-    .Social svg {
+    .Social img {
         width: 2.5em;
     }
 }
 
-.Social svg g {
-    fill: #fff;
-    transition: fill 1s linear;
+.Social img {
+    color: #fff;
+    transition: color 1s linear;
 }
 
-.Social:hover svg g{
-	fill: #FCB001;
+.Social:hover img{
+	color: #FCB001;
 }

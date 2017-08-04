@@ -6,13 +6,17 @@ import Button from '../Button';
 import './SubscribeFooter.css';
 
 class SubscribeFooter extends Component {
+	props: {
+		link: string
+	};
+
 	render(){
 		return(
 			<div className='SubscribeFooter'>
 			<div>
-				<h4>Support the Express-News.</h4>
-				<p>Get access to quality journalism every day.</p>
-				<Button link='https://myaccount.expressnews.com/dssSubscribe.aspx?pid=889&z=00000' text='Subscribe'/>
+				<h4>Real Journalism | Real Insight</h4>
+				<p>The Express-News brings you authoritative local stories. Subscribe today.</p>
+				<Button link={this.props.link} text='Subscribe'/>
 			</div>
 			</div>
 		)

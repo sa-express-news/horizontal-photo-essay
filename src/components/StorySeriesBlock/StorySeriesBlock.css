@@ -8,6 +8,10 @@
     padding: .2em .3em;
 }
 
+.StorySeriesBlock p {
+    font-size: 13.5px;
+}
+
 @media (max-width: 1023px) {
     .StorySeriesBlock {
         position: relative;
@@ -16,15 +20,19 @@
 }
 
 @media (min-width: 768px) {
-    .StorySeriesBlock {
+    .StorySeriesBlock,
+    .StorySeriesBlock p {
         font-size: 18px;
     }
 }
 
 @media (min-width: 1024px) {
     .StorySeriesBlock {
-        font-size: 21px;
         margin-bottom: .8em;
+    }
+    .StorySeriesBlock,
+    .StorySeriesBlock p {
+        font-size: 21px;
     }
 }
 

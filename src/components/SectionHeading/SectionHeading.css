@@ -1,7 +1,8 @@
 .SectionHeading {
     color: #f60000;
+    font-family: 'Suez One', serif;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.1;
     margin: 1em auto;
     width: 85%;
@@ -19,7 +20,7 @@
 
 @media only screen and (min-width: 1024px) {
     .SectionHeading {
-        font-size: 1.25em;
+        font-size: 1.3em;
         margin: 0 auto 2vh auto;
         width: 50%;
     }

@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import _ from 'lodash';
 import ReactVisiblitySensor from 'react-visibility-sensor';
@@ -44,7 +46,7 @@ export default (props: propTypes) => (
 					{props.isCurrPhoto(idx) && (
 						<Animate enter={{'animation': 'fade', 'duration': 1500, 'delay': 0}}>
 							<Image
-							  src={props.loadPhoto(photo.source)}
+							  src={photo.source}
 							  style={props.getStylesBasedOnPositionInViewport()}
 							  fit="contain"
 							  full={true}
@@ -54,7 +56,7 @@ export default (props: propTypes) => (
 					)}
 					{!props.isCurrPhoto(idx) && (
 						<Image
-						  src={props.loadPhoto(photo.source)}
+						  src={photo.source}
 						  fit="contain"
 						  full={true}
 						  className="full-page-photo hide"

@@ -12,15 +12,10 @@ class LeadPhotoContainer extends Component {
 		data: Object
 	};
 
-	loadPhoto = (path: string) =>{
-		return require(`../../images/${path}`);
-	}
-
 	render(){
-		const photoPath = this.loadPhoto(this.props.data.source);
 		return(
 			<div className='LeadPhotoContainer'>
-				<LeadPhoto src={photoPath} alt={this.props.data.caption} />
+				<LeadPhoto src={this.props.data.source} alt={this.props.data.caption} />
 				<PhotoInfo caption={this.props.data.caption} cutline={this.props.data.cutline}/>
 			</div>
 		)

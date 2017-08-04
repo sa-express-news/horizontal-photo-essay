@@ -13,6 +13,12 @@
 
 @media (min-width: 768px) {
     .CreditsContainer {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .CreditsContainer {
         width: 50%;
     }
 }

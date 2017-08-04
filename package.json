@@ -28,7 +28,7 @@
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.10.0",
     "fs-extra": "0.30.0",
-    "grommet": "^1.4.0",
+    "grommet": "^1.4.1",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.3",
     "jest": "18.1.0",
@@ -51,14 +51,15 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "flow-bin": "^0.47.0",
-    "grommet": "^1.4.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
+    "object-fit-polyfill": "^0.1.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-visibility-sensor": "^3.10.0",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.1",
     "redux-thunk": "^2.2.0",
@@ -68,7 +69,9 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "flow": "flow"
+    "flow": "flow",
+    "lint": "jshint .",
+    "validate": "npm ls"
   },
   "jest": {
     "collectCoverageFrom": [

@@ -163,8 +163,34 @@ Jurenovich said Beucler was “instrumental in developing” the annual wild gam
 
 []
 
-
 [+sections.3]
+
+sectionheading: Photo Essay
+
+[.photoessay]
+
+source: ScottDeemFuneral15.JPG
+title: Honoring a Hero
+caption: A photo essay memorializing the May 26th funeral procession for San Antonio firefighter Scott Deem.
+
+source: ScottDeemFuneral02.JPG
+title: Loading in the casket
+caption: The casket of fallen firefighter Scott Deem is placed on a fire truck at Porter Loring Mortuary.
+
+source: ScottDeemFuneral03.JPG
+title: A cross and dog tags
+caption: A San Antonio Fire Department chaplain holds a cross and dog tags as he leaves Porter Loring Mortuary.
+
+source: ScottDeemFuneral04.JPG
+title: Through Alamo Plaza
+caption: The funeral procession proceeds past Alamo Plaza as firefighters and members of the public lined Alamo Street to pay their final respects.
+
+[]
+
+[]
+
+
+[+sections.4]
 
 sectionheading: Joining the national ranks
 
@@ -216,7 +242,7 @@ Southwest Christian is excluded from the Arkansas Activities Association because
 
 []
 
-[+sections.4]
+[+sections.5]
 
 sectionheading: Custody dispute over Bassey
 
@@ -268,7 +294,33 @@ When asked if Bassey was a factor in seeking the sponsorship agreements, Coleman
 
 []
 
-[+sections.5]
+[+sections.6]
+
+sectionheading: Photo Essay
+
+[.photoessay]
+
+source: ScottDeemFuneral15.JPG
+title: Honoring a Hero
+caption: A photo essay memorializing the May 26th funeral procession for San Antonio firefighter Scott Deem.
+
+source: ScottDeemFuneral02.JPG
+title: Loading in the casket
+caption: The casket of fallen firefighter Scott Deem is placed on a fire truck at Porter Loring Mortuary.
+
+source: ScottDeemFuneral03.JPG
+title: A cross and dog tags
+caption: A San Antonio Fire Department chaplain holds a cross and dog tags as he leaves Porter Loring Mortuary.
+
+source: ScottDeemFuneral04.JPG
+title: Through Alamo Plaza
+caption: The funeral procession proceeds past Alamo Plaza as firefighters and members of the public lined Alamo Street to pay their final respects.
+
+[]
+
+[]
+
+[+sections.7]
 
 sectionheading: Tourney MVP
 

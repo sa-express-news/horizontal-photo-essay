@@ -27,7 +27,7 @@
     }
 }
 
-.IntroParagraph:first-child:first-letter {
+/*.IntroParagraph:first-child:first-letter {
     color: #FCB001;
     float: left;
     font-family: 'Suez One', serif;
@@ -51,7 +51,34 @@
         margin-bottom: -50px;
         margin-top: -50px;
     }
+}*/
+
+.IntroParagraph span {
+    color: #FCB001;
+    float: left;
+    font-family: 'Suez One', serif;
+    font-size: 80px;
+    padding-right: 10px;
+    margin-bottom: -20px;
+    margin-top: -15px;
 }
+
+@media(min-width: 768px) {
+    .IntroParagraph span {
+        font-size: 130px;
+        margin-bottom: -32px;
+        margin-top: -30px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .IntroParagraph span{
+        font-size: 150px;
+        margin-bottom: -50px;
+        margin-top: -50px;
+    }
+}
+
 
 
 

@@ -13,7 +13,7 @@ class IntroParagraph extends Component {
 	render(){
 		return(
 
-				<p className='IntroParagraph'>{this.props.text}</p>
+				<p className='IntroParagraph'><span>{this.props.text.substring(0,1)}</span>{this.props.text.substring(1)}</p>
 				
 		)
 	}

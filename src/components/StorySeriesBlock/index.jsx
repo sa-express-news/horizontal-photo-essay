@@ -10,6 +10,9 @@ class StorySeriesBlock extends Component{
 	};
 
 	render(){
+		if(!this.props.text){
+			return null;
+		}
 		return(
 			<div className='StorySeriesBlock'>
 				<p>{this.props.text.toUpperCase()}</p>

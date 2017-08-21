@@ -1,6 +1,7 @@
 .Paragraph {
+    line-height: 1.25;
     margin: .5em auto;
-    width: 90%;
+    width: 85%;
 }
 
 @media (min-width: 640px) {
@@ -9,27 +10,33 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .Paragraph {
-        /*font-size: 2.6vh;*/
-        width: 80%;
+        font-size: 1.1em;
+        width: 70%;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .Paragraph {
         font-size: 1.25em;
-        margin: 0 0 2vh 22vh;
-        line-height: 1.5;
+        margin: 0 auto 2vh auto;
         width: 50%;
     }
 }
 
-.Paragraph .dropCap {
+.Paragraph .DropCap {
+    color: #FCB001;
     float: left;
-    font-size: 8vh;
-    line-height: 60px;
-    padding-top: 1vh;
+    font-family: 'Suez One', serif;
+    font-size: 80px;
     padding-right: 0;
     padding-left: 3px;
+    margin-bottom: -.25em;
+}
+
+@media (min-width: 768px) {
+    .Paragraph .DropCap {
+        font-size: 140px;
+    }
 }

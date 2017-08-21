@@ -1,7 +1,11 @@
+.SmallPhotoDesktopContainerReverse {
+    margin: 2em 0;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .SmallPhotoDesktopContainerReverse {
-        margin: 0 auto;
-        width: 90%;
+        margin: 1.5em auto;
+        width: 80%;
     }
 }
 
@@ -10,7 +14,7 @@
         display: inline-flex;
         flex-direction: column;
         float: right;
-        margin: 0 40% 0 1em;
+        margin: 0 25% 1% 2%;
         width: 25%;
     }
     .SmallPhotoDesktopContainerReverse .PhotoInfo p {
@@ -24,14 +28,16 @@
     }
 }
 
-@media (min-width: 1150px) {
+
+/*@media (min-width: 1150px) {
     .SmallPhotoDesktopContainerReverse {
         margin-right: 42%;
     }
 }
 
-@media (min-width: 1360px) and (min-device-pixel-ratio: 2) {
+@media (min-width: 1360px) {
     .SmallPhotoDesktopContainerReverse {
         margin-right: 34%;
     }
 }
+*/

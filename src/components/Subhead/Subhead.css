@@ -1,14 +1,21 @@
 .Subhead {
-    /*    color: #000;
-    font-size: 3vh;
-    font-weight: 300;
-    line-height: 1.1;*/
-    font-size: 1em;
+    font-family: 'Sanchez', serif;
+    font-size: 20.4px;
+    font-weight: normal;
+    line-height: 1.25;
     margin-top: 0;
 }
 
 @media (min-width: 768px) {
     .Subhead {
-        font-size: 1.15em;
+        font-size: 18px;
+        margin-bottom: .2em;
+    }
+}
+
+@media (min-width: 1024px){
+    .Subhead{
+        font-size: 22px;
+        width: 80%;
     }
 }

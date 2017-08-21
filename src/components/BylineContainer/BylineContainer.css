@@ -1,5 +1,10 @@
+.BylineContainer {
+    font-family: 'Sanchez', serif;
+    font-size: 16px;
+}
+
 @media (min-width: 1024px) {
     .BylineContainer {
-        margin-top: 2em;
+        font-size: 18px;
     }
 }

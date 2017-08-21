@@ -1,22 +1,25 @@
-.Social {
-	float: left;
+.Social{
+	cursor: pointer;
 }
 
-.Social svg {
-	padding: 10px;
-	width: 30px;
-	height: 30px;
+.Social img {
+    background: #808080;
+    padding: 5px;
+    width: 2em;
+    border-radius: 50%;
 }
 
-.Social svg g {
-	fill: white;
-	fill-opacity: 0.6;
+@media (min-width: 1024px) {
+    .Social img {
+        width: 2.5em;
+    }
 }
 
-@media only screen and (min-width: 768px) {
-	.Social svg {
-		width: 50px;
-		height: 50px;
-		padding: 15px;
-	}
+.Social img {
+    color: #fff;
+    transition: color 1s linear;
+}
+
+.Social:hover img{
+	color: #FCB001;
 }

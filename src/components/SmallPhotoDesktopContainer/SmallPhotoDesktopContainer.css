@@ -1,13 +1,11 @@
-@media (max-width: 767px) {
-    .SmallPhotoDesktopContainer {
-        margin: 2em 0;
-    }
+.SmallPhotoDesktopContainer {
+    margin: 2em 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .SmallPhotoDesktopContainer {
-        margin: 0 auto;
-        width: 90%;
+        margin: 1.5em auto;
+        width: 80%;
     }
 }
 
@@ -16,12 +14,12 @@
         display: inline-flex;
         flex-direction: column;
         float: left;
-        margin: 0 1em 0 22vh;
+        margin: 0 2% 1% 25%;
         width: 25%;
     }
     .SmallPhotoDesktopContainer .PhotoInfo {
-        margin: 0;
-        text-align: right;
+/*        margin: 0;*/
+/*        text-align: right;*/
     }
     .SmallPhotoDesktopContainer .PhotoInfo p {
         margin-bottom: 0;

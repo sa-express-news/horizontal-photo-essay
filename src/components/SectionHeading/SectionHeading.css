@@ -1,10 +1,11 @@
 .SectionHeading {
-    margin: .5em auto;
-    width: 90%;
-    color: #080808;
-    font-weight: bold;
+    color: #f60000;
+    font-family: 'Suez One', serif;
+    font-size: 1em;
+    font-weight: normal;
     line-height: 1.1;
-    font-size: 1.25em;
+    margin: 1em auto;
+    width: 85%;
 }
 
 @media (min-width: 640px) {
@@ -13,28 +14,14 @@
 
 @media only screen and (min-width: 768px) {
     .SectionHeading {
-        width: 80%;
+        width: 70%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .SectionHeading {
-        margin: 0 0 2vh 22vh;
-        line-height: 1.5;
+        font-size: 1.3em;
+        margin: 0 auto 2vh auto;
         width: 50%;
-    }
-}
-
-.dropCap {
-    font-size: 8vh;
-    margin-right: 3vh;
-    display: block;
-    font-weight: bold;
-    float: left;
-}
-
-@media (min-width: 768px) {
-    .dropCap {
-        font-size: 7vh;
     }
 }

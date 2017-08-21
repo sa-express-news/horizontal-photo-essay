@@ -1,48 +1,48 @@
-.PullQuote {
-    color: #080808;
-    font-size: 1.25em;
-    font-weight: bold;
-    margin: 3vh auto 3vh;
+.PullQuoteContainer {
+    color: #000;
+    width: 85%;
+    margin: 0 auto;
 }
 
-@media (max-width: 767px) {
-    .PullQuote {
-        width: 75%;
-    }
+.PullQuote {
+
+    font-family: 'Suez One', serif;
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 3vh 0 3vh;
+}
+
+.PullQuoteAttribution {
+    font-family: 'Sanchez';
+    font-size: 14px;
+    line-height: 1.1;
 }
 
 @media (min-width: 768px) {
     .PullQuoteContainer {
         float: left;
+        margin-left: 15%;
         margin-right: 2%;
-        text-align: right;
-        width: 45%;
+        width: 35%;
     }
     .PullQuote {
-        font-size: 1.6em;
-        font-weight: bold;
-        margin-left: 22%;
+        font-size: 24px;
     }
 }
 
 @media (min-width: 1024px) {
     .PullQuoteContainer {
         clear: both;
-        width: 35%;
+        margin-left: 25%;
+        width: 25%;
     }
     .PullQuote {
-        margin-left: 30%;
-    }
-}
-
-@media (min-width: 1028px) {
-    .PullQuote {
-        margin-left: 35%;
+/*        margin-left: 30%;*/
     }
 }
 
 @media (min-width: 1440px) {
     .PullQuote {
-        margin-left: 26%;
+/*        margin-left: 26%;*/
     }
 }

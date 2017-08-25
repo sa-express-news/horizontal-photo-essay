@@ -107,7 +107,5 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "pre-commit": [
-    "flow"
-  ]
+  "pre-commit": []
 }

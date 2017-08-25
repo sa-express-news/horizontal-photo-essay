@@ -1,9 +1,0 @@
-.StoryTop{
-	margin-bottom: 0;
-}
-
-@media (min-width: 600px){
-	.StoryTop{
-		margin-bottom: 2em;
-	}
-}

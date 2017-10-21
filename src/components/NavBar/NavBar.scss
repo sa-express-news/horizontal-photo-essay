@@ -1,0 +1,77 @@
+@import 'node_modules/express-news-styleguide/init-base';
+
+.NavBar {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: #222;
+
+	.primary-navigation {
+		width: 100%;
+		min-height: 45px;
+		display: inline-block;
+		padding-top: 5px;
+
+		@include mediaquery($default-tablet) {
+    		max-width: 360px;
+		    left: 10px;
+		}
+
+		.arrows {
+			margin-left: 8px;
+			float: right;
+
+			@include mediaquery($default-tablet) {
+				float: left;
+			}
+
+			.control-arrow {
+			    font-weight: bold;
+			    text-align: center;
+			    background: rgba(0,0,0,0.5);
+			    color: #fff;
+			    -webkit-touch-callout: none;
+			    -webkit-user-select: none;
+			    -khtml-user-select: none;
+			    -moz-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			    cursor: pointer;
+			    opacity: .3;
+				border: 3px solid #fff;
+				height: 30px;
+			    width: 30px;
+			    margin: 8px 5px 5px;
+			    padding: 0;
+			    line-height: 25px;
+
+			    &.prev, &.next {
+		    		float: left;
+			    }
+
+				&.next .fa, &.prev .fa {
+			    	font-size: 28px;
+				}
+			}
+		}
+	}
+
+	.text {
+		display: inline-block;
+		width: 95%;
+		font-family: $base-serif;
+		color: white;
+		font-size: 14px;
+		line-height: 20px;
+		padding-top: 8px;
+		position: relative;
+		margin: 0 2% 1%;
+
+		@include mediaquery($default-tablet) {
+			top: inherit;
+			left: inherit;
+			width: calc(98% - 400px);
+			margin: 0;
+		}
+	}
+}

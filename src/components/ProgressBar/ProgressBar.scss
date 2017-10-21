@@ -1,0 +1,19 @@
+.ProgressBar {
+    position: absolute;
+    top: 0;
+    height: 3px;
+    background-color: #000;
+    z-index: 100;
+    width: 100%;
+
+    .current-progress {
+    	background-color: #c12020;
+	    height: 100%;
+	    -webkit-transition: width 1s ease-out;
+	    -moz-transition: width 1s ease-out;
+	    -o-transition: width 1s ease-out;
+	    -ms-transition: width 1s ease-out;
+	    transition: width 1s ease-out;
+	    width: 0;
+    }
+}

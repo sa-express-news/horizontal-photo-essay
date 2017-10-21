@@ -2,7 +2,7 @@
   "name": "expressnews-react-template",
   "version": "0.1.0",
   "private": true,
-  "s3Bucket": "http://projects.expressnews.com.s3-website-us-east-1.amazonaws.com/longform-template",
+  "s3Bucket": "http://projects.expressnews.com.s3-website-us-east-1.amazonaws.com/opioid-crisis",
   "devDependencies": {
     "autoprefixer": "6.7.2",
     "babel-core": "6.22.1",
@@ -12,7 +12,7 @@
     "babel-preset-react-app": "^2.2.0",
     "babel-runtime": "^6.20.0",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
-    "chalk": "1.1.3",
+    "chalk": "^1.1.3",
     "connect-history-api-fallback": "1.3.0",
     "cross-spawn": "4.0.2",
     "css-loader": "0.26.1",
@@ -28,30 +28,39 @@
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.10.0",
     "fs-extra": "0.30.0",
+    "googleapis": "^22.2.0",
     "grommet": "^1.4.1",
     "gulp": "^3.9.1",
     "gulp-archieml": "^1.0.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.3",
+    "inquirer": "^3.3.0",
     "jest": "18.1.0",
     "json-loader": "0.5.4",
+    "marked": "^0.3.6",
+    "nconf": "^0.8.5",
     "node-sass": "^4.5.2",
     "object-assign": "4.1.1",
+    "open": "0.0.5",
     "postcss-loader": "1.2.2",
     "precommit-hook": "^3.0.0",
     "promise": "7.1.1",
     "react-dev-utils": "^0.5.2",
+    "request": "^2.83.0",
     "sass-loader": "^6.0.5",
     "style-loader": "0.13.1",
+    "untildify": "^3.0.2",
     "url-loader": "0.5.7",
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "2.0.2"
+    "whatwg-fetch": "2.0.2",
+    "xlsx": "^0.11.6"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
+    "express-news-styleguide": "^1.0.2",
     "flow-bin": "^0.47.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
@@ -60,7 +69,7 @@
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1",
+    "react-router-dom": "next",
     "react-visibility-sensor": "^3.10.0",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.1",
@@ -73,7 +82,9 @@
     "test": "node scripts/test.js --env=jsdom",
     "flow": "flow",
     "lint": "jshint .",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "user/authorize": "./src/utils/authorize.js",
+    "spreadsheet/fetch": "./src/utils/fetch-spreadsheet.js"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -106,6 +117,5 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "pre-commit": []
+  }
 }

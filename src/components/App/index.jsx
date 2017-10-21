@@ -1,17 +1,26 @@
 // @flow
 
-import React, { Component } from 'react';
+import React from 'react';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
-import './App.css';
+// components
+import Splash 		from '../Splash/Splash';
+import Slideshow 	from '../Slideshow/Slideshow';
 
-class App extends Component {
-  render() {
-    return (
-      <div className='App'>
-      
-      </div>
-    );
-  }
-}
+// scss
+import './App.scss';
 
-export default App;
+import data from '../../data/data.json';
+
+const renderSplash = () => <Splash meta={data.META} img={data.PHOTOS[5].url} />
+
+const renderSlideshow = ({ match }) => <Slideshow photos={data.PHOTOS} slideIdx={match.params.slideIdx} />
+
+export default () => (
+	<Router>
+		<div className="App">
+			<Route exact path="/" render={renderSplash} />
+			<Route path="/slide/:slideIdx" render={renderSlideshow} />
+		</div>
+	</Router>
+);

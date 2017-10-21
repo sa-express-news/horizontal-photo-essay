@@ -1,0 +1,28 @@
+@import 'node_modules/express-news-styleguide/init-base';
+
+.Social{
+	cursor: pointer;
+    float: left;
+}
+
+.Social img {
+    background: #333;
+    padding: 4px;
+    margin: 6px 5px 3px;
+    width: 1.8em;
+
+    @include mediaquery($default-tablet) {
+        width: 2em;
+        padding: 4px;
+        margin: 6px 10px 3px;
+    }
+}
+
+.Social img {
+    color: #fff;
+    transition: color 1s linear;
+}
+
+.Social:hover img{
+	color: #FCB001;
+}

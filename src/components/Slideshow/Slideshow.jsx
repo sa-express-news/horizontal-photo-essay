@@ -74,7 +74,7 @@ class Slideshow extends Component {
 			<div className='Slideshow'>
 				<ProgressBar idx={this.state.currIdx} len={len} />
 				<Route ref="nav-bar" render={({ history }) => (
-					<NavBar slide={slide} idx={this.state.currIdx} len={len} history={history} />
+					<NavBar slide={slide} idx={this.state.currIdx} socialURL={this.props.socialURL} len={len} history={history} />
 				)} />
 				<Photo slide={slide} navBarHeight={this.state.navBarHeight} />
 			</div>

@@ -90,7 +90,7 @@ class NavBar extends Component {
 					<div ref="text-block" className="text">{this.props.slide.caption}</div>
 				)}
 				<div className="primary-navigation">
-					<SocialBlock />
+					<SocialBlock socialURL={this.props.socialURL} />
 					<div className="arrows">
 						<div onClick={this.moveToPrevSlide.bind(this)} className="control-arrow prev">
 							<i className="fa fa-angle-left"></i>

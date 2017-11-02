@@ -4,17 +4,17 @@ import React from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 // components
-import Splash 		from '../Splash/Splash';
-import Slideshow 	from '../Slideshow/Slideshow';
+import SplashContainer 	from '../SplashContainer/SplashContainer';
+import Slideshow 		from '../Slideshow/Slideshow';
 
 // scss
 import './App.scss';
 
 import data from '../../data/data.json';
 
-const renderSplash = () => <Splash meta={data.META} img={data.PHOTOS[5].url} />
+const renderSplash = () => <SplashContainer meta={data.META} />
 
-const renderSlideshow = ({ match }) => <Slideshow photos={data.PHOTOS} slideIdx={match.params.slideIdx} />
+const renderSlideshow = ({ match }) => <Slideshow photos={data.PHOTOS} socialURL={data.META.slideshow_url_for_social} slideIdx={match.params.slideIdx} />
 
 export default () => (
 	<Router>
